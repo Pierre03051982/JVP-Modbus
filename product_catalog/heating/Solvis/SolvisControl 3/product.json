@@ -1,0 +1,294 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "DHW buffer temperature (°C)",
+      "Profile": "Solvis_degC",
+      "ReadAddress": 33024,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Warmwasser-Puffertemperatur (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "DHW buffer temperature (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Domestic hot water temperature (°C)",
+      "Profile": "Solvis_degC",
+      "ReadAddress": 33025,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Warmwassertemperatur (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "Domestic hot water temperature (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Heating buffer top temperature (°C)",
+      "Profile": "Solvis_degC",
+      "ReadAddress": 33027,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Heizungspuffer oben (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "Heating buffer top temperature (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Heating buffer bottom temperature (°C)",
+      "Profile": "Solvis_degC",
+      "ReadAddress": 33032,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Heizungspuffer unten (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "Heating buffer bottom temperature (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Outside temperature (°C)",
+      "Profile": "Solvis_degC",
+      "ReadAddress": 33033,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Außentemperatur (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "Outside temperature (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Flow temperature (°C)",
+      "Profile": "Solvis_degC",
+      "ReadAddress": 33035,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Vorlauftemperatur (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "Flow temperature (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Cold water temperature (°C)",
+      "Profile": "Solvis_degC",
+      "ReadAddress": 33038,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Kaltwassertemperatur (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "Cold water temperature (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Fault status bitfield",
+      "Profile": "",
+      "ReadAddress": 33045,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Störungs-Bitfeld"
+        },
+        {
+          "Language": "en",
+          "Name": "Fault status bitfield"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "HC1 operating mode (1-5)",
+      "Profile": "",
+      "ReadAddress": 2818,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "HKR1 Betriebsart (1=Tag 2=Nacht 3=Auto 4=Standby 5=Urlaub)"
+        },
+        {
+          "Language": "en",
+          "Name": "HC1 operating mode (1=Day 2=Night 3=Auto 4=Standby 5=Holiday)"
+        }
+      ],
+      "WriteAddress": 2818,
+      "WriteFunctionCode": 16
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "HC1 day setpoint temperature (°C)",
+      "Profile": "Solvis_degC",
+      "ReadAddress": 2820,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "HKR1 Tag-Solltemperatur (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "HC1 day setpoint temperature (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "HC1 night setback temperature (°C)",
+      "Profile": "Solvis_degC",
+      "ReadAddress": 2821,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "HKR1 Nacht-Absenktemperatur (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "HC1 night setback temperature (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "TCP",
+  "Profiles": {
+    "Solvis_degC": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " °C",
+      "Type": 2
+    }
+  },
+  "Type": "heating",
+  "Manufacturer": "Solvis",
+  "Product": "SolvisControl 3",
+  "Requests": {
+    "Interval": 3000
+  },
+  "VirtualAddresses": []
+}

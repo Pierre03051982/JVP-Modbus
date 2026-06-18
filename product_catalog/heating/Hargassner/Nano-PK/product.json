@@ -1,0 +1,246 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Boiler state (enum)",
+      "Profile": "",
+      "ReadAddress": 87,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Kesselzustand (Enum)"
+        },
+        {
+          "Language": "en",
+          "Name": "Boiler state (enum)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Boiler temperature actual (°C)",
+      "Profile": "Hargassner_degC",
+      "ReadAddress": 100,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Kesseltemperatur Ist (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "Boiler temperature actual (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Boiler temperature setpoint (°C)",
+      "Profile": "Hargassner_degC",
+      "ReadAddress": 101,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Kesseltemperatur Soll (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "Boiler temperature setpoint (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Flue gas temperature (°C)",
+      "Profile": "Hargassner_degC",
+      "ReadAddress": 102,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Abgastemperatur (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "Flue gas temperature (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Buffer state (enum)",
+      "Profile": "",
+      "ReadAddress": 203,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Zustand Pufferspeicher (Enum)"
+        },
+        {
+          "Language": "en",
+          "Name": "Buffer state (enum)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Buffer temperature top (°C)",
+      "Profile": "Hargassner_degC",
+      "ReadAddress": 204,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Puffertemperatur oben (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "Buffer temperature top (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Buffer temperature bottom (°C)",
+      "Profile": "Hargassner_degC",
+      "ReadAddress": 205,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Puffertemperatur unten (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "Buffer temperature bottom (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Domestic hot water temperature (°C)",
+      "Profile": "Hargassner_degC",
+      "ReadAddress": 210,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Warmwassertemperatur (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "Domestic hot water temperature (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Fault status bitfield",
+      "Profile": "",
+      "ReadAddress": 300,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Störmeldungs-Bitfeld"
+        },
+        {
+          "Language": "en",
+          "Name": "Fault status bitfield"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "TCP",
+  "Profiles": {
+    "Hargassner_degC": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " °C",
+      "Type": 2
+    }
+  },
+  "Type": "heating",
+  "Manufacturer": "Hargassner",
+  "Product": "Nano-PK",
+  "Requests": {
+    "Interval": 3000
+  },
+  "VirtualAddresses": []
+}
