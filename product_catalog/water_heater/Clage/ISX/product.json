@@ -1,0 +1,936 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Inlet temperature",
+      "Profile": "Clage_degC",
+      "ReadAddress": 0,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Eintrittstemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Inlet temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Outlet temperature",
+      "Profile": "Clage_degC",
+      "ReadAddress": 1,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Austrittstemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Outlet temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Water flow",
+      "Profile": "Clage_lmin",
+      "ReadAddress": 2,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Wasserdurchfluss"
+        },
+        {
+          "Language": "en",
+          "Name": "Water flow"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current power",
+      "Profile": "Clage_kW",
+      "ReadAddress": 3,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Aktuelle Leistung"
+        },
+        {
+          "Language": "en",
+          "Name": "Current power"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current power (percent)",
+      "Profile": "Clage_pct",
+      "ReadAddress": 4,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Aktuelle Leistung (Prozent)"
+        },
+        {
+          "Language": "en",
+          "Name": "Current power (percent)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Maximum power (selected MPS level)",
+      "Profile": "Clage_kW",
+      "ReadAddress": 5,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Maximale Leistung (gewählte MPS-Stufe)"
+        },
+        {
+          "Language": "en",
+          "Name": "Maximum power (selected MPS level)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Total energy consumed",
+      "Profile": "Clage_Wh",
+      "ReadAddress": 100,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Gesamtenergie"
+        },
+        {
+          "Language": "en",
+          "Name": "Total energy consumed"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Total water volume",
+      "Profile": "Clage_l",
+      "ReadAddress": 102,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Gesamtwassermenge"
+        },
+        {
+          "Language": "en",
+          "Name": "Total water volume"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Tap count",
+      "Profile": "",
+      "ReadAddress": 104,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Anzahl Zapfungen"
+        },
+        {
+          "Language": "en",
+          "Name": "Tap count"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Total heating time",
+      "Profile": "Clage_s",
+      "ReadAddress": 108,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Gesamte Heizzeit"
+        },
+        {
+          "Language": "en",
+          "Name": "Total heating time"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Time since last power-on",
+      "Profile": "Clage_s",
+      "ReadAddress": 110,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Betriebszeit seit Einschalten"
+        },
+        {
+          "Language": "en",
+          "Name": "Time since last power-on"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Error code (0 = no error)",
+      "Profile": "",
+      "ReadAddress": 300,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Fehlercode (0 = kein Fehler)"
+        },
+        {
+          "Language": "en",
+          "Name": "Error code (0 = no error)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Currently selected MPS level",
+      "Profile": "",
+      "ReadAddress": 310,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Aktuelle MPS-Leistungsstufe"
+        },
+        {
+          "Language": "en",
+          "Name": "Currently selected MPS level"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Number of MPS levels supported",
+      "Profile": "",
+      "ReadAddress": 311,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Anzahl verfügbarer MPS-Stufen"
+        },
+        {
+          "Language": "en",
+          "Name": "Number of MPS levels supported"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Maximum power at MPS level 0",
+      "Profile": "Clage_kW",
+      "ReadAddress": 312,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Max. Leistung MPS-Stufe 0"
+        },
+        {
+          "Language": "en",
+          "Name": "Maximum power at MPS level 0"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Maximum power at MPS level 1",
+      "Profile": "Clage_kW",
+      "ReadAddress": 313,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Max. Leistung MPS-Stufe 1"
+        },
+        {
+          "Language": "en",
+          "Name": "Maximum power at MPS level 1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Maximum power at MPS level 2",
+      "Profile": "Clage_kW",
+      "ReadAddress": 314,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Max. Leistung MPS-Stufe 2"
+        },
+        {
+          "Language": "en",
+          "Name": "Maximum power at MPS level 2"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Maximum power at MPS level 3",
+      "Profile": "Clage_kW",
+      "ReadAddress": 315,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Max. Leistung MPS-Stufe 3"
+        },
+        {
+          "Language": "en",
+          "Name": "Maximum power at MPS level 3"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 11,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Active software version",
+      "Profile": "",
+      "ReadAddress": 350,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Firmware-Version (aktiv)"
+        },
+        {
+          "Language": "en",
+          "Name": "Active software version"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 11,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Device serial number",
+      "Profile": "",
+      "ReadAddress": 358,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Seriennummer"
+        },
+        {
+          "Language": "en",
+          "Name": "Device serial number"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 11,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Device article number",
+      "Profile": "",
+      "ReadAddress": 362,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Artikelnummer"
+        },
+        {
+          "Language": "en",
+          "Name": "Device article number"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Outlet temperature setpoint",
+      "Profile": "Clage_degC",
+      "ReadAddress": 0,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Soll-Austrittstemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Outlet temperature setpoint"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Maximum flow at outlet",
+      "Profile": "Clage_lmin",
+      "ReadAddress": 1,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Maximaler Durchfluss am Auslauf"
+        },
+        {
+          "Language": "en",
+          "Name": "Maximum flow at outlet"
+        }
+      ],
+      "WriteAddress": 1,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Maximum temperature setpoint (scalding protection)",
+      "Profile": "Clage_degC",
+      "ReadAddress": 2,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Maximale Solltemperatur (Verbrühschutz)"
+        },
+        {
+          "Language": "en",
+          "Name": "Maximum temperature setpoint (scalding protection)"
+        }
+      ],
+      "WriteAddress": 2,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Select MPS level (power limit)",
+      "Profile": "",
+      "ReadAddress": 310,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "MPS-Leistungsstufe wählen (Leistungsbegrenzung)"
+        },
+        {
+          "Language": "en",
+          "Name": "Select MPS level (power limit)"
+        }
+      ],
+      "WriteAddress": 310,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 0,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Device is on power limit",
+      "Profile": "",
+      "ReadAddress": 0,
+      "ReadFunctionCode": 2,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Gerät an Leistungsgrenze"
+        },
+        {
+          "Language": "en",
+          "Name": "Device is on power limit"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 0,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Setpoint at maximum",
+      "Profile": "",
+      "ReadAddress": 1,
+      "ReadFunctionCode": 2,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Sollwert am Maximum"
+        },
+        {
+          "Language": "en",
+          "Name": "Setpoint at maximum"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 0,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Scalding protection active",
+      "Profile": "",
+      "ReadAddress": 2,
+      "ReadFunctionCode": 2,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Verbrühschutz aktiv"
+        },
+        {
+          "Language": "en",
+          "Name": "Scalding protection active"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 0,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Radio module installed",
+      "Profile": "",
+      "ReadAddress": 300,
+      "ReadFunctionCode": 2,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Funkmodul vorhanden"
+        },
+        {
+          "Language": "en",
+          "Name": "Radio module installed"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 0,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Valve installed",
+      "Profile": "",
+      "ReadAddress": 301,
+      "ReadFunctionCode": 2,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Ventil vorhanden"
+        },
+        {
+          "Language": "en",
+          "Name": "Valve installed"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 0,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Leakage detected",
+      "Profile": "",
+      "ReadAddress": 303,
+      "ReadFunctionCode": 2,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Leckage erkannt"
+        },
+        {
+          "Language": "en",
+          "Name": "Leakage detected"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 0,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Valve is closed",
+      "Profile": "",
+      "ReadAddress": 304,
+      "ReadFunctionCode": 2,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Ventil geschlossen"
+        },
+        {
+          "Language": "en",
+          "Name": "Valve is closed"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 0,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Activate thermal treatment",
+      "Profile": "",
+      "ReadAddress": 212,
+      "ReadFunctionCode": 1,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Thermische Behandlung aktivieren"
+        },
+        {
+          "Language": "en",
+          "Name": "Activate thermal treatment"
+        }
+      ],
+      "WriteAddress": 212,
+      "WriteFunctionCode": 15
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 0,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Open valve (after automatic shut-off)",
+      "Profile": "",
+      "ReadAddress": 213,
+      "ReadFunctionCode": 1,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Ventil öffnen (nach automatischer Abschaltung)"
+        },
+        {
+          "Language": "en",
+          "Name": "Open valve (after automatic shut-off)"
+        }
+      ],
+      "WriteAddress": 213,
+      "WriteFunctionCode": 15
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 0,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Activate quick start",
+      "Profile": "",
+      "ReadAddress": 320,
+      "ReadFunctionCode": 1,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Schnellstart aktivieren"
+        },
+        {
+          "Language": "en",
+          "Name": "Activate quick start"
+        }
+      ],
+      "WriteAddress": 320,
+      "WriteFunctionCode": 15
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "RTU",
+  "Profiles": {
+    "Clage_degC": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " °C",
+      "Type": 2
+    },
+    "Clage_lmin": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " l/min",
+      "Type": 2
+    },
+    "Clage_kW": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " kW",
+      "Type": 2
+    },
+    "Clage_pct": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " %",
+      "Type": 2
+    },
+    "Clage_Wh": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " Wh",
+      "Type": 2
+    },
+    "Clage_l": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " l",
+      "Type": 2
+    },
+    "Clage_s": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " s",
+      "Type": 2
+    }
+  },
+  "Type": "water_heater",
+  "Manufacturer": "Clage",
+  "Product": "ISX",
+  "Requests": {
+    "Interval": 2000
+  },
+  "VirtualAddresses": []
+}
