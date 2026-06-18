@@ -1,0 +1,292 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Ventilation level setpoint (1-4)",
+      "Profile": "Systemair_level",
+      "ReadAddress": 12100,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Lüftungsstufe Soll (1-4)"
+        },
+        {
+          "Language": "en",
+          "Name": "Ventilation level setpoint (1-4)"
+        }
+      ],
+      "WriteAddress": 12100,
+      "WriteFunctionCode": 16
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Ventilation level actual",
+      "Profile": "Systemair_level",
+      "ReadAddress": 12101,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Lüftungsstufe Ist"
+        },
+        {
+          "Language": "en",
+          "Name": "Ventilation level actual"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Supply air temperature",
+      "Profile": "Systemair_degC",
+      "ReadAddress": 12102,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Zulufttemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Supply air temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Extract air temperature",
+      "Profile": "Systemair_degC",
+      "ReadAddress": 12103,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Ablufttemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Extract air temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Outdoor air temperature",
+      "Profile": "Systemair_degC",
+      "ReadAddress": 12104,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Außenlufttemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Outdoor air temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Exhaust air temperature",
+      "Profile": "Systemair_degC",
+      "ReadAddress": 12105,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Fortlufttemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Exhaust air temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Operating mode",
+      "Profile": "Systemair_mode",
+      "ReadAddress": 12200,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Betriebsmodus"
+        },
+        {
+          "Language": "en",
+          "Name": "Operating mode"
+        }
+      ],
+      "WriteAddress": 12200,
+      "WriteFunctionCode": 16
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Filter status",
+      "Profile": "",
+      "ReadAddress": 12300,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Filterstatus"
+        },
+        {
+          "Language": "en",
+          "Name": "Filter status"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Bypass status",
+      "Profile": "",
+      "ReadAddress": 12400,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Bypass-Status"
+        },
+        {
+          "Language": "en",
+          "Name": "Bypass status"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Active alarm code",
+      "Profile": "",
+      "ReadAddress": 15100,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Aktiver Alarmcode"
+        },
+        {
+          "Language": "en",
+          "Name": "Active alarm code"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "RTU",
+  "Profiles": {
+    "Systemair_degC": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " °C",
+      "Type": 2
+    },
+    "Systemair_level": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": "",
+      "Type": 2
+    },
+    "Systemair_mode": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": "",
+      "Type": 2
+    }
+  },
+  "Type": "compact_ventilation_unit",
+  "Manufacturer": "Systemair",
+  "Product": "SAVE VSR VTR",
+  "Requests": {
+    "Interval": 3000
+  },
+  "VirtualAddresses": []
+}

@@ -1,0 +1,443 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Ventilation level setpoint (1-4)",
+      "Profile": "Pluggit_level",
+      "ReadAddress": 323,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Lüftungsstufe Soll (1-4)"
+        },
+        {
+          "Language": "en",
+          "Name": "Ventilation level setpoint (1-4)"
+        }
+      ],
+      "WriteAddress": 323,
+      "WriteFunctionCode": 16
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Operating mode",
+      "Profile": "Pluggit_mode",
+      "ReadAddress": 471,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Betriebsmodus"
+        },
+        {
+          "Language": "en",
+          "Name": "Operating mode"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Outdoor air temperature T1",
+      "Profile": "Pluggit_degC",
+      "ReadAddress": 132,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Außenlufttemperatur T1"
+        },
+        {
+          "Language": "en",
+          "Name": "Outdoor air temperature T1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Supply air temperature T2",
+      "Profile": "Pluggit_degC",
+      "ReadAddress": 134,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Zulufttemperatur T2"
+        },
+        {
+          "Language": "en",
+          "Name": "Supply air temperature T2"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Extract air temperature T3",
+      "Profile": "Pluggit_degC",
+      "ReadAddress": 136,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Ablufttemperatur T3"
+        },
+        {
+          "Language": "en",
+          "Name": "Extract air temperature T3"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Exhaust air temperature T4",
+      "Profile": "Pluggit_degC",
+      "ReadAddress": 138,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Fortlufttemperatur T4"
+        },
+        {
+          "Language": "en",
+          "Name": "Exhaust air temperature T4"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Room temperature T5",
+      "Profile": "Pluggit_degC",
+      "ReadAddress": 140,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Raumtemperatur T5"
+        },
+        {
+          "Language": "en",
+          "Name": "Room temperature T5"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Fan speed setpoint Fan1",
+      "Profile": "Pluggit_rpm",
+      "ReadAddress": 100,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Lüfterdrehzahl Soll Fan1"
+        },
+        {
+          "Language": "en",
+          "Name": "Fan speed setpoint Fan1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Bypass request",
+      "Profile": "",
+      "ReadAddress": 167,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Bypass-Anforderung"
+        },
+        {
+          "Language": "en",
+          "Name": "Bypass request"
+        }
+      ],
+      "WriteAddress": 167,
+      "WriteFunctionCode": 16
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Bypass actual status",
+      "Profile": "",
+      "ReadAddress": 197,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Bypass-Ist-Status"
+        },
+        {
+          "Language": "en",
+          "Name": "Bypass actual status"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Bypass remaining time",
+      "Profile": "Pluggit_min",
+      "ReadAddress": 263,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Bypass-Restzeit"
+        },
+        {
+          "Language": "en",
+          "Name": "Bypass remaining time"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Room air humidity",
+      "Profile": "Pluggit_pct",
+      "ReadAddress": 195,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Raumluftfeuchte"
+        },
+        {
+          "Language": "en",
+          "Name": "Room air humidity"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "VOC concentration",
+      "Profile": "Pluggit_ppm",
+      "ReadAddress": 429,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "VOC-Konzentration"
+        },
+        {
+          "Language": "en",
+          "Name": "VOC concentration"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Filter remaining days",
+      "Profile": "Pluggit_days",
+      "ReadAddress": 554,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Filter-Reststandzeit"
+        },
+        {
+          "Language": "en",
+          "Name": "Filter remaining days"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "TCP",
+  "Profiles": {
+    "Pluggit_degC": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " °C",
+      "Type": 2
+    },
+    "Pluggit_rpm": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " rpm",
+      "Type": 2
+    },
+    "Pluggit_pct": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " %",
+      "Type": 2
+    },
+    "Pluggit_ppm": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " ppm",
+      "Type": 2
+    },
+    "Pluggit_min": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " min",
+      "Type": 2
+    },
+    "Pluggit_days": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " d",
+      "Type": 2
+    },
+    "Pluggit_level": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": "",
+      "Type": 2
+    },
+    "Pluggit_mode": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": "",
+      "Type": 2
+    }
+  },
+  "Type": "compact_ventilation_unit",
+  "Manufacturer": "Pluggit",
+  "Product": "AP310",
+  "Requests": {
+    "Interval": 3000
+  },
+  "VirtualAddresses": []
+}

@@ -1,0 +1,349 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Operating mode",
+      "Profile": "Brink_mode",
+      "ReadAddress": 6000,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Betriebsmodus"
+        },
+        {
+          "Language": "en",
+          "Name": "Operating mode"
+        }
+      ],
+      "WriteAddress": 6000,
+      "WriteFunctionCode": 16
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Ventilation level setpoint",
+      "Profile": "Brink_level",
+      "ReadAddress": 6050,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Lüftungsstufe Soll"
+        },
+        {
+          "Language": "en",
+          "Name": "Ventilation level setpoint"
+        }
+      ],
+      "WriteAddress": 6050,
+      "WriteFunctionCode": 16
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Supply air temperature",
+      "Profile": "Brink_degC",
+      "ReadAddress": 4002,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Zulufttemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Supply air temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Extract air temperature",
+      "Profile": "Brink_degC",
+      "ReadAddress": 4003,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Ablufttemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Extract air temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Outdoor air temperature",
+      "Profile": "Brink_degC",
+      "ReadAddress": 4004,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Außenlufttemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Outdoor air temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Exhaust air temperature",
+      "Profile": "Brink_degC",
+      "ReadAddress": 4005,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Fortlufttemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Exhaust air temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Filter status",
+      "Profile": "",
+      "ReadAddress": 4100,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Filterstatus"
+        },
+        {
+          "Language": "en",
+          "Name": "Filter status"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Supply air fan speed",
+      "Profile": "Brink_rpm",
+      "ReadAddress": 4101,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Zuluftventilator Drehzahl"
+        },
+        {
+          "Language": "en",
+          "Name": "Supply air fan speed"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Extract air fan speed",
+      "Profile": "Brink_rpm",
+      "ReadAddress": 4102,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Abluftventilator Drehzahl"
+        },
+        {
+          "Language": "en",
+          "Name": "Extract air fan speed"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Extract air humidity",
+      "Profile": "Brink_pct",
+      "ReadAddress": 4103,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Abluftfeuchte"
+        },
+        {
+          "Language": "en",
+          "Name": "Extract air humidity"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "CO2 concentration",
+      "Profile": "Brink_ppm",
+      "ReadAddress": 4104,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "CO2-Konzentration"
+        },
+        {
+          "Language": "en",
+          "Name": "CO2 concentration"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "RTU",
+  "Profiles": {
+    "Brink_degC": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " °C",
+      "Type": 2
+    },
+    "Brink_rpm": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " rpm",
+      "Type": 2
+    },
+    "Brink_pct": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " %",
+      "Type": 2
+    },
+    "Brink_ppm": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " ppm",
+      "Type": 2
+    },
+    "Brink_level": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": "",
+      "Type": 2
+    },
+    "Brink_mode": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": "",
+      "Type": 2
+    }
+  },
+  "Type": "compact_ventilation_unit",
+  "Manufacturer": "Brink",
+  "Product": "Renovent Excellent",
+  "Requests": {
+    "Interval": 3000
+  },
+  "VirtualAddresses": []
+}
