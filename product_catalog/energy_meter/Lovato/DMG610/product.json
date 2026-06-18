@@ -1,0 +1,362 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 0.01,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Voltage L1-N",
+      "Profile": "DMG610_V",
+      "ReadAddress": 2,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Spannung L1-N"
+        },
+        {
+          "Language": "en",
+          "Name": "Voltage L1-N"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 0.01,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Voltage L2-N",
+      "Profile": "DMG610_V",
+      "ReadAddress": 4,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Spannung L2-N"
+        },
+        {
+          "Language": "en",
+          "Name": "Voltage L2-N"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 0.01,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Voltage L3-N",
+      "Profile": "DMG610_V",
+      "ReadAddress": 6,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Spannung L3-N"
+        },
+        {
+          "Language": "en",
+          "Name": "Voltage L3-N"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 0.0001,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current L1",
+      "Profile": "DMG610_A",
+      "ReadAddress": 8,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom L1"
+        },
+        {
+          "Language": "en",
+          "Name": "Current L1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 0.0001,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current L2",
+      "Profile": "DMG610_A",
+      "ReadAddress": 10,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom L2"
+        },
+        {
+          "Language": "en",
+          "Name": "Current L2"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 0.0001,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current L3",
+      "Profile": "DMG610_A",
+      "ReadAddress": 12,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom L3"
+        },
+        {
+          "Language": "en",
+          "Name": "Current L3"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 6,
+      "Factor": 0.01,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Active Power L1",
+      "Profile": "DMG610_W",
+      "ReadAddress": 20,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Wirkleistung L1"
+        },
+        {
+          "Language": "en",
+          "Name": "Active Power L1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 6,
+      "Factor": 0.01,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Active Power L2",
+      "Profile": "DMG610_W",
+      "ReadAddress": 22,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Wirkleistung L2"
+        },
+        {
+          "Language": "en",
+          "Name": "Active Power L2"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 6,
+      "Factor": 0.01,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Active Power L3",
+      "Profile": "DMG610_W",
+      "ReadAddress": 24,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Wirkleistung L3"
+        },
+        {
+          "Language": "en",
+          "Name": "Active Power L3"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 0.001,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Frequency",
+      "Profile": "DMG610_Hz",
+      "ReadAddress": 50,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Frequenz"
+        },
+        {
+          "Language": "en",
+          "Name": "Frequency"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Active Energy Import",
+      "Profile": "DMG610_kWh",
+      "ReadAddress": 6944,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Wirkenergie Bezug"
+        },
+        {
+          "Language": "en",
+          "Name": "Active Energy Import"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Active Energy Export",
+      "Profile": "DMG610_kWh",
+      "ReadAddress": 6946,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Wirkenergie Einspeisung"
+        },
+        {
+          "Language": "en",
+          "Name": "Active Energy Export"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "RTU",
+  "Profiles": {
+    "DMG610_V": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " V",
+      "Type": 2
+    },
+    "DMG610_A": {
+      "Associations": [],
+      "Digits": 3,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " A",
+      "Type": 2
+    },
+    "DMG610_W": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " W",
+      "Type": 2
+    },
+    "DMG610_Hz": {
+      "Associations": [],
+      "Digits": 2,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " Hz",
+      "Type": 2
+    },
+    "DMG610_kWh": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " kWh",
+      "Type": 2
+    }
+  },
+  "Type": "Energy_Meter",
+  "Manufacturer": "Lovato",
+  "Product": "DMG610",
+  "Requests": {
+    "Interval": 5000
+  },
+  "VirtualAddresses": []
+}

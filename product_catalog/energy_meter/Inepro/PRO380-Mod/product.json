@@ -1,0 +1,384 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Voltage L1",
+      "Profile": "PRO380_V",
+      "ReadAddress": 5002,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Spannung L1"
+        },
+        {
+          "Language": "en",
+          "Name": "Voltage L1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Voltage L2",
+      "Profile": "PRO380_V",
+      "ReadAddress": 5004,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Spannung L2"
+        },
+        {
+          "Language": "en",
+          "Name": "Voltage L2"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Voltage L3",
+      "Profile": "PRO380_V",
+      "ReadAddress": 5006,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Spannung L3"
+        },
+        {
+          "Language": "en",
+          "Name": "Voltage L3"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current L1",
+      "Profile": "PRO380_A",
+      "ReadAddress": 5012,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom L1"
+        },
+        {
+          "Language": "en",
+          "Name": "Current L1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current L2",
+      "Profile": "PRO380_A",
+      "ReadAddress": 5014,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom L2"
+        },
+        {
+          "Language": "en",
+          "Name": "Current L2"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current L3",
+      "Profile": "PRO380_A",
+      "ReadAddress": 5016,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom L3"
+        },
+        {
+          "Language": "en",
+          "Name": "Current L3"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Total Active Power",
+      "Profile": "PRO380_kW",
+      "ReadAddress": 5026,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Wirkleistung gesamt"
+        },
+        {
+          "Language": "en",
+          "Name": "Total Active Power"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Total Reactive Power",
+      "Profile": "PRO380_kvar",
+      "ReadAddress": 5034,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Blindleistung gesamt"
+        },
+        {
+          "Language": "en",
+          "Name": "Total Reactive Power"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Total Apparent Power",
+      "Profile": "PRO380_kVA",
+      "ReadAddress": 5042,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Scheinleistung gesamt"
+        },
+        {
+          "Language": "en",
+          "Name": "Total Apparent Power"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Total Power Factor",
+      "Profile": "",
+      "ReadAddress": 5050,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Leistungsfaktor gesamt"
+        },
+        {
+          "Language": "en",
+          "Name": "Total Power Factor"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Frequency",
+      "Profile": "PRO380_Hz",
+      "ReadAddress": 5052,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Frequenz"
+        },
+        {
+          "Language": "en",
+          "Name": "Frequency"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Total Active Energy",
+      "Profile": "PRO380_kWh",
+      "ReadAddress": 40960,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Wirkenergie gesamt"
+        },
+        {
+          "Language": "en",
+          "Name": "Total Active Energy"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "RTU",
+  "Profiles": {
+    "PRO380_V": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " V",
+      "Type": 2
+    },
+    "PRO380_A": {
+      "Associations": [],
+      "Digits": 2,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " A",
+      "Type": 2
+    },
+    "PRO380_kW": {
+      "Associations": [],
+      "Digits": 3,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " kW",
+      "Type": 2
+    },
+    "PRO380_kvar": {
+      "Associations": [],
+      "Digits": 3,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " kvar",
+      "Type": 2
+    },
+    "PRO380_kVA": {
+      "Associations": [],
+      "Digits": 3,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " kVA",
+      "Type": 2
+    },
+    "PRO380_Hz": {
+      "Associations": [],
+      "Digits": 2,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " Hz",
+      "Type": 2
+    },
+    "PRO380_kWh": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " kWh",
+      "Type": 2
+    }
+  },
+  "Type": "Energy_Meter",
+  "Manufacturer": "Inepro",
+  "Product": "PRO380-Mod",
+  "Requests": {
+    "Interval": 5000
+  },
+  "VirtualAddresses": []
+}

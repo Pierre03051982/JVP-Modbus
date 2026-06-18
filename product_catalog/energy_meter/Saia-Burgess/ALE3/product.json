@@ -1,0 +1,386 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Total Active Energy Tariff 1",
+      "Profile": "ALE3_kWh",
+      "ReadAddress": 28,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Wirkenergie gesamt Tarif 1"
+        },
+        {
+          "Language": "en",
+          "Name": "Total Active Energy Tariff 1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Voltage L1",
+      "Profile": "ALE3_V",
+      "ReadAddress": 36,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Spannung L1"
+        },
+        {
+          "Language": "en",
+          "Name": "Voltage L1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.01,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current L1",
+      "Profile": "ALE3_A",
+      "ReadAddress": 37,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom L1"
+        },
+        {
+          "Language": "en",
+          "Name": "Current L1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.01,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Active Power L1",
+      "Profile": "ALE3_kW",
+      "ReadAddress": 38,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Wirkleistung L1"
+        },
+        {
+          "Language": "en",
+          "Name": "Active Power L1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.01,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Reactive Power L1",
+      "Profile": "ALE3_kvar",
+      "ReadAddress": 39,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Blindleistung L1"
+        },
+        {
+          "Language": "en",
+          "Name": "Reactive Power L1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.001,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Power Factor L1",
+      "Profile": "",
+      "ReadAddress": 40,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Leistungsfaktor L1"
+        },
+        {
+          "Language": "en",
+          "Name": "Power Factor L1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Voltage L2",
+      "Profile": "ALE3_V",
+      "ReadAddress": 41,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Spannung L2"
+        },
+        {
+          "Language": "en",
+          "Name": "Voltage L2"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.01,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current L2",
+      "Profile": "ALE3_A",
+      "ReadAddress": 42,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom L2"
+        },
+        {
+          "Language": "en",
+          "Name": "Current L2"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.01,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Active Power L2",
+      "Profile": "ALE3_kW",
+      "ReadAddress": 43,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Wirkleistung L2"
+        },
+        {
+          "Language": "en",
+          "Name": "Active Power L2"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Voltage L3",
+      "Profile": "ALE3_V",
+      "ReadAddress": 46,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Spannung L3"
+        },
+        {
+          "Language": "en",
+          "Name": "Voltage L3"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.01,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current L3",
+      "Profile": "ALE3_A",
+      "ReadAddress": 47,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom L3"
+        },
+        {
+          "Language": "en",
+          "Name": "Current L3"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.01,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Active Power L3",
+      "Profile": "ALE3_kW",
+      "ReadAddress": 48,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Wirkleistung L3"
+        },
+        {
+          "Language": "en",
+          "Name": "Active Power L3"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.01,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Total Active Power",
+      "Profile": "ALE3_kW",
+      "ReadAddress": 51,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Wirkleistung gesamt"
+        },
+        {
+          "Language": "en",
+          "Name": "Total Active Power"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "RTU",
+  "Profiles": {
+    "ALE3_kWh": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " kWh",
+      "Type": 2
+    },
+    "ALE3_V": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " V",
+      "Type": 2
+    },
+    "ALE3_A": {
+      "Associations": [],
+      "Digits": 2,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " A",
+      "Type": 2
+    },
+    "ALE3_kW": {
+      "Associations": [],
+      "Digits": 2,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " kW",
+      "Type": 2
+    },
+    "ALE3_kvar": {
+      "Associations": [],
+      "Digits": 2,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " kvar",
+      "Type": 2
+    }
+  },
+  "Type": "Energy_Meter",
+  "Manufacturer": "Saia-Burgess",
+  "Product": "ALE3",
+  "Requests": {
+    "Interval": 5000
+  },
+  "VirtualAddresses": []
+}
