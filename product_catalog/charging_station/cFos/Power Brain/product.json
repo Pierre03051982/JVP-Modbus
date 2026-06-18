@@ -1,0 +1,327 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Active power",
+      "Profile": "cs_W",
+      "ReadAddress": 8062,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Wirkleistung"
+        },
+        {
+          "Language": "en",
+          "Name": "Active power"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current L1",
+      "Profile": "cs_A",
+      "ReadAddress": 8064,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom L1"
+        },
+        {
+          "Language": "en",
+          "Name": "Current L1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current L2",
+      "Profile": "cs_A",
+      "ReadAddress": 8066,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom L2"
+        },
+        {
+          "Language": "en",
+          "Name": "Current L2"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current L3",
+      "Profile": "cs_A",
+      "ReadAddress": 8068,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom L3"
+        },
+        {
+          "Language": "en",
+          "Name": "Current L3"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "PP cable capacity",
+      "Profile": "cs_A",
+      "ReadAddress": 8090,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "PP-Kabelkapazität"
+        },
+        {
+          "Language": "en",
+          "Name": "PP cable capacity"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "CP pilot state",
+      "Profile": "",
+      "ReadAddress": 8092,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "CP-Pilot-Zustand"
+        },
+        {
+          "Language": "en",
+          "Name": "CP pilot state"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Set charge limit",
+      "Profile": "cs_A",
+      "ReadAddress": 8093,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Ladelimit setzen"
+        },
+        {
+          "Language": "en",
+          "Name": "Set charge limit"
+        }
+      ],
+      "WriteAddress": 8093,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Charging enable",
+      "Profile": "",
+      "ReadAddress": 8094,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Laden freigeben"
+        },
+        {
+          "Language": "en",
+          "Name": "Charging enable"
+        }
+      ],
+      "WriteAddress": 8094,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current charging current",
+      "Profile": "cs_A",
+      "ReadAddress": 8095,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Aktueller Ladestrom"
+        },
+        {
+          "Language": "en",
+          "Name": "Current charging current"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 11,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Total energy meter",
+      "Profile": "cs_Wh",
+      "ReadAddress": 8058,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Gesamtzählerstand"
+        },
+        {
+          "Language": "en",
+          "Name": "Total energy meter"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Controller temperature",
+      "Profile": "cs_degC",
+      "ReadAddress": 8122,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Temperatur Regler"
+        },
+        {
+          "Language": "en",
+          "Name": "Controller temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "TCP",
+  "Profiles": {
+    "cs_A": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " A",
+      "Type": 2
+    },
+    "cs_W": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " W",
+      "Type": 2
+    },
+    "cs_Wh": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " Wh",
+      "Type": 2
+    },
+    "cs_degC": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " °C",
+      "Type": 2
+    }
+  },
+  "Type": "charging_station",
+  "Manufacturer": "cFos",
+  "Product": "Power Brain",
+  "Requests": {
+    "Interval": 2000
+  },
+  "VirtualAddresses": []
+}

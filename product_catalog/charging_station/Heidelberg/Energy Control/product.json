@@ -1,0 +1,421 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Vehicle state (CP-State)",
+      "Profile": "",
+      "ReadAddress": 5,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Fahrzeugzustand (CP-State A-F)"
+        },
+        {
+          "Language": "en",
+          "Name": "Vehicle state (CP-State)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "PP cable capacity",
+      "Profile": "cs_A",
+      "ReadAddress": 6,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "PP-Kabelkapazität"
+        },
+        {
+          "Language": "en",
+          "Name": "PP cable capacity"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Hardware error bitmask",
+      "Profile": "",
+      "ReadAddress": 9,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Hardware-Fehler Bitmask"
+        },
+        {
+          "Language": "en",
+          "Name": "Hardware error bitmask"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Voltage L1-N",
+      "Profile": "cs_V",
+      "ReadAddress": 10,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Spannung L1-N"
+        },
+        {
+          "Language": "en",
+          "Name": "Voltage L1-N"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Voltage L2-N",
+      "Profile": "cs_V",
+      "ReadAddress": 11,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Spannung L2-N"
+        },
+        {
+          "Language": "en",
+          "Name": "Voltage L2-N"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Voltage L3-N",
+      "Profile": "cs_V",
+      "ReadAddress": 12,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Spannung L3-N"
+        },
+        {
+          "Language": "en",
+          "Name": "Voltage L3-N"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current L1",
+      "Profile": "cs_A",
+      "ReadAddress": 14,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom L1"
+        },
+        {
+          "Language": "en",
+          "Name": "Current L1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current L2",
+      "Profile": "cs_A",
+      "ReadAddress": 15,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom L2"
+        },
+        {
+          "Language": "en",
+          "Name": "Current L2"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current L3",
+      "Profile": "cs_A",
+      "ReadAddress": 16,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom L3"
+        },
+        {
+          "Language": "en",
+          "Name": "Current L3"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "PCB temperature",
+      "Profile": "cs_degC",
+      "ReadAddress": 17,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Temperatur Platine"
+        },
+        {
+          "Language": "en",
+          "Name": "PCB temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Active power",
+      "Profile": "cs_W",
+      "ReadAddress": 24,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Aktuelle Leistung"
+        },
+        {
+          "Language": "en",
+          "Name": "Active power"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 6,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Total energy meter",
+      "Profile": "cs_Wh",
+      "ReadAddress": 25,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Gesamtzählerstand"
+        },
+        {
+          "Language": "en",
+          "Name": "Total energy meter"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Watchdog timeout",
+      "Profile": "cs_s",
+      "ReadAddress": 257,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Watchdog-Timeout"
+        },
+        {
+          "Language": "en",
+          "Name": "Watchdog timeout"
+        }
+      ],
+      "WriteAddress": 257,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Set max charging current",
+      "Profile": "cs_A",
+      "ReadAddress": 261,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Max. Ladestrom setzen"
+        },
+        {
+          "Language": "en",
+          "Name": "Set max charging current"
+        }
+      ],
+      "WriteAddress": 261,
+      "WriteFunctionCode": 6
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "RTU",
+  "Profiles": {
+    "cs_A": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " A",
+      "Type": 2
+    },
+    "cs_W": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " W",
+      "Type": 2
+    },
+    "cs_Wh": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " Wh",
+      "Type": 2
+    },
+    "cs_V": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " V",
+      "Type": 2
+    },
+    "cs_degC": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " °C",
+      "Type": 2
+    },
+    "cs_s": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " s",
+      "Type": 2
+    }
+  },
+  "Type": "charging_station",
+  "Manufacturer": "Heidelberg",
+  "Product": "Energy Control",
+  "Requests": {
+    "Interval": 2000
+  },
+  "VirtualAddresses": []
+}

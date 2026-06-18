@@ -1,0 +1,364 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Status",
+      "Profile": "",
+      "ReadAddress": 275,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Status"
+        },
+        {
+          "Language": "en",
+          "Name": "Status"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Cable status",
+      "Profile": "",
+      "ReadAddress": 300,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Kabelstatus"
+        },
+        {
+          "Language": "en",
+          "Name": "Cable status"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Voltage phase 1",
+      "Profile": "cs_V",
+      "ReadAddress": 301,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Spannung Phase 1"
+        },
+        {
+          "Language": "en",
+          "Name": "Voltage phase 1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Voltage phase 2",
+      "Profile": "cs_V",
+      "ReadAddress": 303,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Spannung Phase 2"
+        },
+        {
+          "Language": "en",
+          "Name": "Voltage phase 2"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Voltage phase 3",
+      "Profile": "cs_V",
+      "ReadAddress": 305,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Spannung Phase 3"
+        },
+        {
+          "Language": "en",
+          "Name": "Voltage phase 3"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Total energy meter",
+      "Profile": "cs_kWh",
+      "ReadAddress": 307,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Gesamtzählerstand"
+        },
+        {
+          "Language": "en",
+          "Name": "Total energy meter"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Max current P1 (actual)",
+      "Profile": "cs_A",
+      "ReadAddress": 1000,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Ist-Max-Strom P1"
+        },
+        {
+          "Language": "en",
+          "Name": "Max current P1 (actual)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current P1",
+      "Profile": "cs_A",
+      "ReadAddress": 1006,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom P1 aktuell"
+        },
+        {
+          "Language": "en",
+          "Name": "Current P1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current P2",
+      "Profile": "cs_A",
+      "ReadAddress": 1008,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom P2 aktuell"
+        },
+        {
+          "Language": "en",
+          "Name": "Current P2"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current P3",
+      "Profile": "cs_A",
+      "ReadAddress": 1010,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom P3 aktuell"
+        },
+        {
+          "Language": "en",
+          "Name": "Current P3"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Set max current P1",
+      "Profile": "cs_A",
+      "ReadAddress": 1012,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Soll-Max-Strom P1"
+        },
+        {
+          "Language": "en",
+          "Name": "Set max current P1"
+        }
+      ],
+      "WriteAddress": 1012,
+      "WriteFunctionCode": 16
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Set max current P2",
+      "Profile": "cs_A",
+      "ReadAddress": 1014,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Soll-Max-Strom P2"
+        },
+        {
+          "Language": "en",
+          "Name": "Set max current P2"
+        }
+      ],
+      "WriteAddress": 1014,
+      "WriteFunctionCode": 16
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Set max current P3",
+      "Profile": "cs_A",
+      "ReadAddress": 1016,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Soll-Max-Strom P3"
+        },
+        {
+          "Language": "en",
+          "Name": "Set max current P3"
+        }
+      ],
+      "WriteAddress": 1016,
+      "WriteFunctionCode": 16
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "TCP",
+  "Profiles": {
+    "cs_A": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " A",
+      "Type": 2
+    },
+    "cs_V": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " V",
+      "Type": 2
+    },
+    "cs_kWh": {
+      "Associations": [],
+      "Digits": 2,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " kWh",
+      "Type": 2
+    }
+  },
+  "Type": "charging_station",
+  "Manufacturer": "Compleo",
+  "Product": "eBox",
+  "Requests": {
+    "Interval": 2000
+  },
+  "VirtualAddresses": []
+}

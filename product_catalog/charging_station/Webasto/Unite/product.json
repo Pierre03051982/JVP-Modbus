@@ -1,0 +1,458 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Charge point state",
+      "Profile": "",
+      "ReadAddress": 1000,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Ladepunktzustand"
+        },
+        {
+          "Language": "en",
+          "Name": "Charge point state"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Charging state",
+      "Profile": "",
+      "ReadAddress": 1001,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Ladezustand"
+        },
+        {
+          "Language": "en",
+          "Name": "Charging state"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Cable state",
+      "Profile": "",
+      "ReadAddress": 1004,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Kabelzustand"
+        },
+        {
+          "Language": "en",
+          "Name": "Cable state"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "EVSE fault code",
+      "Profile": "",
+      "ReadAddress": 1006,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "EVSE-Fehlercode"
+        },
+        {
+          "Language": "en",
+          "Name": "EVSE fault code"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.001,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current L1",
+      "Profile": "cs_A",
+      "ReadAddress": 1008,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom L1"
+        },
+        {
+          "Language": "en",
+          "Name": "Current L1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.001,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current L2",
+      "Profile": "cs_A",
+      "ReadAddress": 1010,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom L2"
+        },
+        {
+          "Language": "en",
+          "Name": "Current L2"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.001,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Current L3",
+      "Profile": "cs_A",
+      "ReadAddress": 1012,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strom L3"
+        },
+        {
+          "Language": "en",
+          "Name": "Current L3"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Voltage L1",
+      "Profile": "cs_V",
+      "ReadAddress": 1014,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Spannung L1"
+        },
+        {
+          "Language": "en",
+          "Name": "Voltage L1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Voltage L2",
+      "Profile": "cs_V",
+      "ReadAddress": 1016,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Spannung L2"
+        },
+        {
+          "Language": "en",
+          "Name": "Voltage L2"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Voltage L3",
+      "Profile": "cs_V",
+      "ReadAddress": 1018,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Spannung L3"
+        },
+        {
+          "Language": "en",
+          "Name": "Voltage L3"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Active power total",
+      "Profile": "cs_W",
+      "ReadAddress": 1020,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Wirkleistung gesamt"
+        },
+        {
+          "Language": "en",
+          "Name": "Active power total"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 0.001,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Total energy meter",
+      "Profile": "cs_kWh",
+      "ReadAddress": 1036,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Gesamtzählerstand"
+        },
+        {
+          "Language": "en",
+          "Name": "Total energy meter"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Session max current",
+      "Profile": "cs_A",
+      "ReadAddress": 1100,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Sitzungs-Max-Strom"
+        },
+        {
+          "Language": "en",
+          "Name": "Session max current"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Session energy",
+      "Profile": "cs_Wh",
+      "ReadAddress": 1502,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Sitzungsenergie"
+        },
+        {
+          "Language": "en",
+          "Name": "Session energy"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Set charging current",
+      "Profile": "cs_A",
+      "ReadAddress": 5004,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Soll-Ladestrom setzen"
+        },
+        {
+          "Language": "en",
+          "Name": "Set charging current"
+        }
+      ],
+      "WriteAddress": 5004,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Failsafe current",
+      "Profile": "cs_A",
+      "ReadAddress": 2000,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Failsafe-Strom"
+        },
+        {
+          "Language": "en",
+          "Name": "Failsafe current"
+        }
+      ],
+      "WriteAddress": 2000,
+      "WriteFunctionCode": 6
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "TCP",
+  "Profiles": {
+    "cs_A": {
+      "Associations": [],
+      "Digits": 2,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " A",
+      "Type": 2
+    },
+    "cs_W": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " W",
+      "Type": 2
+    },
+    "cs_Wh": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " Wh",
+      "Type": 2
+    },
+    "cs_kWh": {
+      "Associations": [],
+      "Digits": 2,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " kWh",
+      "Type": 2
+    },
+    "cs_V": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " V",
+      "Type": 2
+    }
+  },
+  "Type": "charging_station",
+  "Manufacturer": "Webasto",
+  "Product": "Unite",
+  "Requests": {
+    "Interval": 2000
+  },
+  "VirtualAddresses": []
+}
