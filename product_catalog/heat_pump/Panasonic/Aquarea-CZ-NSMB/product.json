@@ -1,0 +1,413 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Operation (on/off)",
+      "Profile": "Panasonic_OnOff",
+      "ReadAddress": 0,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Betrieb (Ein/Aus)"
+        },
+        {
+          "Language": "en",
+          "Name": "Operation (on/off)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Outdoor actual temperature",
+      "Profile": "Panasonic_degC",
+      "ReadAddress": 1,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Außentemperatur aktuell"
+        },
+        {
+          "Language": "en",
+          "Name": "Outdoor actual temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Outlet water temperature",
+      "Profile": "Panasonic_degC",
+      "ReadAddress": 2,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Vorlauftemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Outlet water temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Inlet water temperature",
+      "Profile": "Panasonic_degC",
+      "ReadAddress": 3,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Rücklauftemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Inlet water temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Operating mode",
+      "Profile": "Panasonic_Mode",
+      "ReadAddress": 4,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Betriebsmodus"
+        },
+        {
+          "Language": "en",
+          "Name": "Operating mode"
+        }
+      ],
+      "WriteAddress": 4,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Tank actual temperature",
+      "Profile": "Panasonic_degC",
+      "ReadAddress": 32,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Warmwassertemperatur aktuell"
+        },
+        {
+          "Language": "en",
+          "Name": "Tank actual temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Tank water set temperature",
+      "Profile": "Panasonic_degC",
+      "ReadAddress": 33,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Warmwasser-Solltemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Tank water set temperature"
+        }
+      ],
+      "WriteAddress": 33,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Error code",
+      "Profile": "",
+      "ReadAddress": 52,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Fehlercode (0 = kein Fehler)"
+        },
+        {
+          "Language": "en",
+          "Name": "Error code (0 = no error)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "SG ready control pattern (K-Series+)",
+      "Profile": "Panasonic_SGReady",
+      "ReadAddress": 111,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "SG-Ready Steuermuster (ab K-Serie)"
+        },
+        {
+          "Language": "en",
+          "Name": "SG ready control pattern (K-Series+)"
+        }
+      ],
+      "WriteAddress": 111,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Heat mode energy consumption (W)",
+      "Profile": "Panasonic_W",
+      "ReadAddress": 46,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Leistungsaufnahme Heizen (W)"
+        },
+        {
+          "Language": "en",
+          "Name": "Heat mode energy consumption (W)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "RTU",
+  "Profiles": {
+    "Panasonic_degC": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 1.0,
+      "Suffix": " °C",
+      "Type": 2
+    },
+    "Panasonic_OnOff": {
+      "Associations": [
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Aus",
+          "Value": 0.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Ein",
+          "Value": 1.0
+        }
+      ],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": "",
+      "Type": 1
+    },
+    "Panasonic_Mode": {
+      "Associations": [
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Heizen",
+          "Value": 1.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Heizen + Warmwasser",
+          "Value": 2.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Warmwasser",
+          "Value": 3.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Kühlen + Warmwasser",
+          "Value": 4.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Kühlen",
+          "Value": 5.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Auto + Warmwasser",
+          "Value": 7.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Auto + Heizen",
+          "Value": 8.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Auto + Heizen + Warmwasser",
+          "Value": 9.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Auto + Kühlen",
+          "Value": 10.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Auto + Kühlen + Warmwasser",
+          "Value": 11.0
+        }
+      ],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": "",
+      "Type": 1
+    },
+    "Panasonic_SGReady": {
+      "Associations": [
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Normal",
+          "Value": 1.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "WP-Stopp",
+          "Value": 2.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Kapazität 1 (erhöht)",
+          "Value": 3.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Kapazität 2 (Maximum)",
+          "Value": 4.0
+        }
+      ],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": "",
+      "Type": 1
+    },
+    "Panasonic_W": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " W",
+      "Type": 2
+    }
+  },
+  "Type": "heat_pump",
+  "Manufacturer": "Panasonic",
+  "Product": "Aquarea-CZ-NSMB",
+  "Requests": {
+    "Interval": 5000
+  },
+  "VirtualAddresses": []
+}

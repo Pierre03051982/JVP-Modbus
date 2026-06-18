@@ -1,0 +1,645 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Operating mode setpoint heating circuit",
+      "Profile": "OTS_HeatingMode",
+      "ReadAddress": 1,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Soll-Betriebsart Heizkreis"
+        },
+        {
+          "Language": "en",
+          "Name": "Operating mode setpoint heating circuit"
+        }
+      ],
+      "WriteAddress": 1,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Heating/cooling setpoint",
+      "Profile": "OTS_degC",
+      "ReadAddress": 2,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Sollwert Heizen/Kühlen"
+        },
+        {
+          "Language": "en",
+          "Name": "Heating/cooling setpoint"
+        }
+      ],
+      "WriteAddress": 2,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Operating mode setpoint hot water",
+      "Profile": "OTS_DHWMode",
+      "ReadAddress": 3,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Soll-Betriebsart Warmwasser"
+        },
+        {
+          "Language": "en",
+          "Name": "Operating mode setpoint hot water"
+        }
+      ],
+      "WriteAddress": 3,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Hot water temperature setpoint",
+      "Profile": "OTS_degC",
+      "ReadAddress": 4,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Warmwassertemperatur-Sollwert"
+        },
+        {
+          "Language": "en",
+          "Name": "Hot water temperature setpoint"
+        }
+      ],
+      "WriteAddress": 4,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Operating mode heating circuit (readback)",
+      "Profile": "OTS_HeatingMode",
+      "ReadAddress": 11,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Betriebsart Heizkreis (Rückmeldung)"
+        },
+        {
+          "Language": "en",
+          "Name": "Operating mode heating circuit (readback)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Heating/cooling setpoint (readback)",
+      "Profile": "OTS_degC",
+      "ReadAddress": 12,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Sollwert Heizen/Kühlen (Rückmeldung)"
+        },
+        {
+          "Language": "en",
+          "Name": "Heating/cooling setpoint (readback)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Hot water temperature setpoint (readback)",
+      "Profile": "OTS_degC",
+      "ReadAddress": 14,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Warmwasser-Solltemperatur (Rückmeldung)"
+        },
+        {
+          "Language": "en",
+          "Name": "Hot water temperature setpoint (readback)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Hot water temperature",
+      "Profile": "OTS_degC_int",
+      "ReadAddress": 29,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Warmwassertemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Hot water temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Supply temperature heat pump (T-WVL)",
+      "Profile": "OTS_degC",
+      "ReadAddress": 34,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Vorlauftemperatur Wärmepumpe (T-WVL)"
+        },
+        {
+          "Language": "en",
+          "Name": "Supply temperature heat pump (T-WVL)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Return temperature heat pump (T-WRL)",
+      "Profile": "OTS_degC",
+      "ReadAddress": 35,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Rücklauftemperatur Wärmepumpe (T-WRL)"
+        },
+        {
+          "Language": "en",
+          "Name": "Return temperature heat pump (T-WRL)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Outside temperature (T-AU)",
+      "Profile": "OTS_degC",
+      "ReadAddress": 48,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Außentemperatur (T-AU)"
+        },
+        {
+          "Language": "en",
+          "Name": "Outside temperature (T-AU)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Plant operating status",
+      "Profile": "OTS_PlantStatus",
+      "ReadAddress": 49,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Betriebsstatus Anlage"
+        },
+        {
+          "Language": "en",
+          "Name": "Plant operating status"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Heat pump operating status",
+      "Profile": "OTS_HPStatus",
+      "ReadAddress": 50,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Betriebsstatus Wärmepumpe"
+        },
+        {
+          "Language": "en",
+          "Name": "Heat pump operating status"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Compressor operating hours",
+      "Profile": "OTS_hours",
+      "ReadAddress": 79,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Betriebsstunden Verdichter"
+        },
+        {
+          "Language": "en",
+          "Name": "Compressor operating hours"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Heating energy",
+      "Profile": "OTS_kWh",
+      "ReadAddress": 89,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Heizenergie"
+        },
+        {
+          "Language": "en",
+          "Name": "Heating energy"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Hot water energy",
+      "Profile": "OTS_kWh",
+      "ReadAddress": 93,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Warmwasserenergie"
+        },
+        {
+          "Language": "en",
+          "Name": "Hot water energy"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Electricity demand heating",
+      "Profile": "OTS_kWh",
+      "ReadAddress": 97,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Strombedarf Heizen"
+        },
+        {
+          "Language": "en",
+          "Name": "Electricity demand heating"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Room temperature heating circuit 1",
+      "Profile": "OTS_degC_int",
+      "ReadAddress": 149,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Raumtemperatur Heizkreis 1"
+        },
+        {
+          "Language": "en",
+          "Name": "Room temperature heating circuit 1"
+        }
+      ],
+      "WriteAddress": 149,
+      "WriteFunctionCode": 6
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "TCP",
+  "Profiles": {
+    "OTS_degC": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " °C",
+      "Type": 2
+    },
+    "OTS_degC_int": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 1.0,
+      "Suffix": " °C",
+      "Type": 2
+    },
+    "OTS_kWh": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " kWh",
+      "Type": 2
+    },
+    "OTS_hours": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " h",
+      "Type": 2
+    },
+    "OTS_HeatingMode": {
+      "Associations": [
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Aus",
+          "Value": 0.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Heizen",
+          "Value": 1.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Kühlen",
+          "Value": 2.0
+        }
+      ],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": "",
+      "Type": 1
+    },
+    "OTS_DHWMode": {
+      "Associations": [
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Aus",
+          "Value": 0.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Ein",
+          "Value": 1.0
+        }
+      ],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": "",
+      "Type": 1
+    },
+    "OTS_PlantStatus": {
+      "Associations": [
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Aus",
+          "Value": 0.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Heizen",
+          "Value": 1.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Warmwasser",
+          "Value": 2.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Kühlen",
+          "Value": 3.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Abtauen",
+          "Value": 4.0
+        }
+      ],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": "",
+      "Type": 1
+    },
+    "OTS_HPStatus": {
+      "Associations": [
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Aus",
+          "Value": 0.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Heizen",
+          "Value": 1.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Kühlen",
+          "Value": 2.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Warmwasser",
+          "Value": 3.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Abtauen",
+          "Value": 4.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "EVU-Sperre",
+          "Value": 5.0
+        },
+        {
+          "Color": -1,
+          "Icon": "",
+          "Name": "Störung",
+          "Value": 14.0
+        }
+      ],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": "",
+      "Type": 1
+    }
+  },
+  "Type": "heat_pump",
+  "Manufacturer": "Ochsner",
+  "Product": "OTS",
+  "Requests": {
+    "Interval": 5000
+  },
+  "VirtualAddresses": []
+}
