@@ -1,0 +1,449 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Temperature sensor 0 (°C)",
+      "Profile": "Askoma_degC",
+      "ReadAddress": 100,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Temperatursensor 0 (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "Temperature sensor 0 (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Temperature sensor 1 (°C)",
+      "Profile": "Askoma_degC",
+      "ReadAddress": 102,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Temperatursensor 1 (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "Temperature sensor 1 (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Temperature sensor 2 (°C)",
+      "Profile": "Askoma_degC",
+      "ReadAddress": 104,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Temperatursensor 2 (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "Temperature sensor 2 (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Temperature sensor 3 (°C)",
+      "Profile": "Askoma_degC",
+      "ReadAddress": 106,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Temperatursensor 3 (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "Temperature sensor 3 (°C)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Device status flags",
+      "Profile": "",
+      "ReadAddress": 109,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Gerätestatus (Flags)"
+        },
+        {
+          "Language": "en",
+          "Name": "Device status flags"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Active heater load (W)",
+      "Profile": "Askoma_W",
+      "ReadAddress": 110,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Aktuell eingeschaltete Leistung (W)"
+        },
+        {
+          "Language": "en",
+          "Name": "Active heater load (W)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Heating step setpoint (0-7)",
+      "Profile": "",
+      "ReadAddress": 200,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Heizschrittanforderung (0-7)"
+        },
+        {
+          "Language": "en",
+          "Name": "Heating step setpoint (0-7)"
+        }
+      ],
+      "WriteAddress": 200,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Power setpoint (W)",
+      "Profile": "Askoma_W",
+      "ReadAddress": 201,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Leistungs-Sollwert (W)"
+        },
+        {
+          "Language": "en",
+          "Name": "Power setpoint (W)"
+        }
+      ],
+      "WriteAddress": 201,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "PV feedin value (W, negative = excess)",
+      "Profile": "Askoma_W",
+      "ReadAddress": 202,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "PV-Überschuss/Einspeisung (W, negativ = Einspeisung)"
+        },
+        {
+          "Language": "en",
+          "Name": "PV feedin value (W, negative = excess)"
+        }
+      ],
+      "WriteAddress": 202,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "EMA heating step setpoint (0-7)",
+      "Profile": "",
+      "ReadAddress": 318,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "EMA Heizschrittanforderung (0-7)"
+        },
+        {
+          "Language": "en",
+          "Name": "EMA heating step setpoint (0-7)"
+        }
+      ],
+      "WriteAddress": 318,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "EMA power setpoint (W)",
+      "Profile": "Askoma_W",
+      "ReadAddress": 319,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "EMA Leistungs-Sollwert (W)"
+        },
+        {
+          "Language": "en",
+          "Name": "EMA power setpoint (W)"
+        }
+      ],
+      "WriteAddress": 319,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "EMA feedin value (W)",
+      "Profile": "Askoma_W",
+      "ReadAddress": 320,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "EMA Einspeise-/Feedin-Wert (W)"
+        },
+        {
+          "Language": "en",
+          "Name": "EMA feedin value (W)"
+        }
+      ],
+      "WriteAddress": 320,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Maximum power (W)",
+      "Profile": "Askoma_W",
+      "ReadAddress": 455,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Maximalleistung (W)"
+        },
+        {
+          "Language": "en",
+          "Name": "Maximum power (W)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Legionella protection temperature (°C)",
+      "Profile": "Askoma_degC",
+      "ReadAddress": 510,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Legionellenschutz-Temperatur (°C)"
+        },
+        {
+          "Language": "en",
+          "Name": "Legionella protection temperature (°C)"
+        }
+      ],
+      "WriteAddress": 510,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Modbus RTU slave ID",
+      "Profile": "",
+      "ReadAddress": 550,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Modbus RTU Slave-ID"
+        },
+        {
+          "Language": "en",
+          "Name": "Modbus RTU slave ID"
+        }
+      ],
+      "WriteAddress": 550,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Actual heating power (W)",
+      "Profile": "Askoma_W",
+      "ReadAddress": 625,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Ist-Heizleistung (W)"
+        },
+        {
+          "Language": "en",
+          "Name": "Actual heating power (W)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Error status flags",
+      "Profile": "",
+      "ReadAddress": 631,
+      "ReadFunctionCode": 4,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Fehler-Status (Flags)"
+        },
+        {
+          "Language": "en",
+          "Name": "Error status flags"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "TCP",
+  "Profiles": {
+    "Askoma_degC": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " °C",
+      "Type": 2
+    },
+    "Askoma_W": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " W",
+      "Type": 2
+    }
+  },
+  "Type": "heating_rod",
+  "Manufacturer": "Askoma",
+  "Product": "AskoHeat Plus",
+  "Requests": {
+    "Interval": 3000
+  },
+  "VirtualAddresses": []
+}
