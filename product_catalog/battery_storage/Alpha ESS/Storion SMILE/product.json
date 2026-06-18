@@ -1,0 +1,325 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Battery voltage",
+      "Profile": "AlphaESS_V",
+      "ReadAddress": 256,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Batteriespannung"
+        },
+        {
+          "Language": "en",
+          "Name": "Battery voltage"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Battery current",
+      "Profile": "AlphaESS_A",
+      "ReadAddress": 257,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Batteriestrom"
+        },
+        {
+          "Language": "en",
+          "Name": "Battery current"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "State of charge (SOC)",
+      "Profile": "AlphaESS_pct",
+      "ReadAddress": 258,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Ladezustand (SOC)"
+        },
+        {
+          "Language": "en",
+          "Name": "State of charge (SOC)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Min cell temperature",
+      "Profile": "AlphaESS_degC",
+      "ReadAddress": 269,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Minimale Zelltemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Min cell temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Max cell temperature",
+      "Profile": "AlphaESS_degC",
+      "ReadAddress": 272,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Maximale Zelltemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Max cell temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Total charge energy",
+      "Profile": "AlphaESS_kWh",
+      "ReadAddress": 288,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Gesamt-Ladeenergie"
+        },
+        {
+          "Language": "en",
+          "Name": "Total charge energy"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Total discharge energy",
+      "Profile": "AlphaESS_kWh",
+      "ReadAddress": 290,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Gesamt-Entladeenergie"
+        },
+        {
+          "Language": "en",
+          "Name": "Total discharge energy"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Battery power",
+      "Profile": "AlphaESS_W",
+      "ReadAddress": 294,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Batterieleistung"
+        },
+        {
+          "Language": "en",
+          "Name": "Battery power"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Dispatch active power",
+      "Profile": "AlphaESS_W",
+      "ReadAddress": 2177,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Dispatch-Wirkleistung"
+        },
+        {
+          "Language": "en",
+          "Name": "Dispatch active power"
+        }
+      ],
+      "WriteAddress": 2177,
+      "WriteFunctionCode": 6
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Dispatch mode",
+      "Profile": "",
+      "ReadAddress": 2181,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Dispatch-Modus"
+        },
+        {
+          "Language": "en",
+          "Name": "Dispatch mode"
+        }
+      ],
+      "WriteAddress": 2181,
+      "WriteFunctionCode": 6
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "TCP",
+  "Profiles": {
+    "AlphaESS_V": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " V",
+      "Type": 2
+    },
+    "AlphaESS_A": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " A",
+      "Type": 2
+    },
+    "AlphaESS_pct": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " %",
+      "Type": 2
+    },
+    "AlphaESS_degC": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " °C",
+      "Type": 2
+    },
+    "AlphaESS_kWh": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " kWh",
+      "Type": 2
+    },
+    "AlphaESS_W": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " W",
+      "Type": 2
+    }
+  },
+  "Type": "battery_storage",
+  "Manufacturer": "Alpha ESS",
+  "Product": "Storion SMILE",
+  "Requests": {
+    "Interval": 5000
+  },
+  "VirtualAddresses": []
+}

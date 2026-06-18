@@ -1,0 +1,255 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Battery status",
+      "Profile": "",
+      "ReadAddress": 37000,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Batterie-Status"
+        },
+        {
+          "Language": "en",
+          "Name": "Battery status"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 6,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Charge/discharge power",
+      "Profile": "Huawei_W",
+      "ReadAddress": 37001,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Lade-/Entladeleistung"
+        },
+        {
+          "Language": "en",
+          "Name": "Charge/discharge power"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "State of capacity (SOC)",
+      "Profile": "Huawei_pct",
+      "ReadAddress": 37004,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Ladezustand (SOC)"
+        },
+        {
+          "Language": "en",
+          "Name": "State of capacity (SOC)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 5,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Battery temperature",
+      "Profile": "Huawei_degC",
+      "ReadAddress": 37022,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Batterietemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Battery temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 0.01,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Total charge energy",
+      "Profile": "Huawei_kWh",
+      "ReadAddress": 37066,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Gesamt-Ladeenergie"
+        },
+        {
+          "Language": "en",
+          "Name": "Total charge energy"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 0.01,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Total discharge energy",
+      "Profile": "Huawei_kWh",
+      "ReadAddress": 37068,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Gesamt-Entladeenergie"
+        },
+        {
+          "Language": "en",
+          "Name": "Total discharge energy"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Maximum charge power",
+      "Profile": "Huawei_W",
+      "ReadAddress": 47075,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Maximale Ladeleistung"
+        },
+        {
+          "Language": "en",
+          "Name": "Maximum charge power"
+        }
+      ],
+      "WriteAddress": 47075,
+      "WriteFunctionCode": 16
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Maximum discharge power",
+      "Profile": "Huawei_W",
+      "ReadAddress": 47077,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Maximale Entladeleistung"
+        },
+        {
+          "Language": "en",
+          "Name": "Maximum discharge power"
+        }
+      ],
+      "WriteAddress": 47077,
+      "WriteFunctionCode": 16
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "TCP",
+  "Profiles": {
+    "Huawei_W": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " W",
+      "Type": 2
+    },
+    "Huawei_pct": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " %",
+      "Type": 2
+    },
+    "Huawei_degC": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " °C",
+      "Type": 2
+    },
+    "Huawei_kWh": {
+      "Associations": [],
+      "Digits": 2,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " kWh",
+      "Type": 2
+    }
+  },
+  "Type": "battery_storage",
+  "Manufacturer": "Huawei",
+  "Product": "LUNA2000",
+  "Requests": {
+    "Interval": 5000
+  },
+  "VirtualAddresses": []
+}

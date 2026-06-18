@@ -1,0 +1,196 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 6,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "PV power",
+      "Profile": "E3DC_W",
+      "ReadAddress": 40067,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "PV-Leistung"
+        },
+        {
+          "Language": "en",
+          "Name": "PV power"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 6,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Battery power",
+      "Profile": "E3DC_W",
+      "ReadAddress": 40069,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Batterieleistung"
+        },
+        {
+          "Language": "en",
+          "Name": "Battery power"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 6,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "House consumption",
+      "Profile": "E3DC_W",
+      "ReadAddress": 40071,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Hausverbrauch"
+        },
+        {
+          "Language": "en",
+          "Name": "House consumption"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 6,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Grid power",
+      "Profile": "E3DC_W",
+      "ReadAddress": 40073,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Netzleistung"
+        },
+        {
+          "Language": "en",
+          "Name": "Grid power"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "State of charge (SOC)",
+      "Profile": "E3DC_pct",
+      "ReadAddress": 40082,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Ladezustand (SOC)"
+        },
+        {
+          "Language": "en",
+          "Name": "State of charge (SOC)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Factor": 0.1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "DC string 1 voltage",
+      "Profile": "E3DC_V",
+      "ReadAddress": 40095,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "DC-String-1-Spannung"
+        },
+        {
+          "Language": "en",
+          "Name": "DC string 1 voltage"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "TCP",
+  "Profiles": {
+    "E3DC_W": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " W",
+      "Type": 2
+    },
+    "E3DC_pct": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " %",
+      "Type": 2
+    },
+    "E3DC_V": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " V",
+      "Type": 2
+    }
+  },
+  "Type": "battery_storage",
+  "Manufacturer": "E3DC",
+  "Product": "S10",
+  "Requests": {
+    "Interval": 5000
+  },
+  "VirtualAddresses": []
+}
