@@ -1,0 +1,844 @@
+{
+    "Addresses": [
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 3,
+            "Factor": 0,
+            "Ident": "C_SunSpec_ID",
+            "Length": 0,
+            "Name": "SunSpec ID",
+            "Profile": "",
+            "ReadAddress": 40000,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "SunSpec ID"
+                },
+                {
+                    "Language": "en",
+                    "Name": "SunSpec ID"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 2,
+            "Factor": 0,
+            "Ident": "C_SunSpec_DID",
+            "Length": 0,
+            "Name": "SunSpec DID (Common)",
+            "Profile": "",
+            "ReadAddress": 40002,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "SunSpec DID (Common)"
+                },
+                {
+                    "Language": "en",
+                    "Name": "SunSpec DID (Common)"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 10,
+            "Factor": 0,
+            "Ident": "C_Manufacturer",
+            "Length": 32,
+            "Name": "Hersteller",
+            "Profile": "",
+            "ReadAddress": 40004,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Hersteller"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Manufacturer"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 10,
+            "Factor": 0,
+            "Ident": "C_Model",
+            "Length": 32,
+            "Name": "Modell",
+            "Profile": "",
+            "ReadAddress": 40020,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Modell"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Model"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 10,
+            "Factor": 0,
+            "Ident": "C_Version",
+            "Length": 16,
+            "Name": "Firmware-Version",
+            "Profile": "",
+            "ReadAddress": 40044,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Firmware-Version"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Firmware Version"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 10,
+            "Factor": 0,
+            "Ident": "C_SerialNumber",
+            "Length": 32,
+            "Name": "Seriennummer",
+            "Profile": "",
+            "ReadAddress": 40052,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Seriennummer"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Serial Number"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 2,
+            "Factor": 0,
+            "Ident": "C_DeviceAddress",
+            "Length": 0,
+            "Name": "Modbus Geräte-ID",
+            "Profile": "",
+            "ReadAddress": 40068,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Modbus Geräte-ID"
+                },
+                {
+                    "Language": "en",
+                    "Name": "MODBUS Unit ID"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 2,
+            "Factor": 0,
+            "Ident": "M_SunSpec_DID",
+            "Length": 0,
+            "Name": "SunSpec DID (Zähler)",
+            "Profile": "",
+            "ReadAddress": 40069,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "SunSpec DID (Zähler)"
+                },
+                {
+                    "Language": "en",
+                    "Name": "SunSpec DID (Meter)"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_Current",
+            "Length": 0,
+            "Name": "Gesamtstrom",
+            "Profile": "",
+            "ReadAddress": 40071,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Gesamtstrom"
+                },
+                {
+                    "Language": "en",
+                    "Name": "AC Total Current"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_Current_A",
+            "Length": 0,
+            "Name": "Strom Phase A (L1)",
+            "Profile": "",
+            "ReadAddress": 40072,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Strom Phase A (L1)"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Phase A Current"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_Current_B",
+            "Length": 0,
+            "Name": "Strom Phase B (L2)",
+            "Profile": "",
+            "ReadAddress": 40073,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Strom Phase B (L2)"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Phase B Current"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_Current_C",
+            "Length": 0,
+            "Name": "Strom Phase C (L3)",
+            "Profile": "",
+            "ReadAddress": 40074,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Strom Phase C (L3)"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Phase C Current"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_Current_SF",
+            "Length": 0,
+            "Name": "Strom Skalierungsfaktor",
+            "Profile": "",
+            "ReadAddress": 40075,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Strom Skalierungsfaktor"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Current Scale Factor"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_Voltage_AN",
+            "Length": 0,
+            "Name": "Spannung Phase A-N (L1)",
+            "Profile": "",
+            "ReadAddress": 40077,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Spannung Phase A-N (L1)"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Phase A to Neutral Voltage"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_Voltage_BN",
+            "Length": 0,
+            "Name": "Spannung Phase B-N (L2)",
+            "Profile": "",
+            "ReadAddress": 40078,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Spannung Phase B-N (L2)"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Phase B to Neutral Voltage"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_Voltage_CN",
+            "Length": 0,
+            "Name": "Spannung Phase C-N (L3)",
+            "Profile": "",
+            "ReadAddress": 40079,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Spannung Phase C-N (L3)"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Phase C to Neutral Voltage"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_Voltage_SF",
+            "Length": 0,
+            "Name": "Spannung Skalierungsfaktor",
+            "Profile": "",
+            "ReadAddress": 40084,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Spannung Skalierungsfaktor"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Voltage Scale Factor"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_Freq",
+            "Length": 0,
+            "Name": "Frequenz",
+            "Profile": "",
+            "ReadAddress": 40085,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Frequenz"
+                },
+                {
+                    "Language": "en",
+                    "Name": "AC Frequency"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_Freq_SF",
+            "Length": 0,
+            "Name": "Frequenz Skalierungsfaktor",
+            "Profile": "",
+            "ReadAddress": 40086,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Frequenz Skalierungsfaktor"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Frequency Scale Factor"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_Power",
+            "Length": 0,
+            "Name": "Gesamte Wirkleistung",
+            "Profile": "~Watt",
+            "ReadAddress": 40087,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Gesamte Wirkleistung"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Total Real Power"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_Power_A",
+            "Length": 0,
+            "Name": "Wirkleistung Phase A (L1)",
+            "Profile": "~Watt",
+            "ReadAddress": 40088,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Wirkleistung Phase A (L1)"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Phase A Real Power"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_Power_B",
+            "Length": 0,
+            "Name": "Wirkleistung Phase B (L2)",
+            "Profile": "~Watt",
+            "ReadAddress": 40089,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Wirkleistung Phase B (L2)"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Phase B Real Power"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_Power_C",
+            "Length": 0,
+            "Name": "Wirkleistung Phase C (L3)",
+            "Profile": "~Watt",
+            "ReadAddress": 40090,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Wirkleistung Phase C (L3)"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Phase C Real Power"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_Power_SF",
+            "Length": 0,
+            "Name": "Wirkleistung Skalierungsfaktor",
+            "Profile": "",
+            "ReadAddress": 40091,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Wirkleistung Skalierungsfaktor"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Real Power Scale Factor"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_VAR",
+            "Length": 0,
+            "Name": "Gesamte Blindleistung",
+            "Profile": "EM420_VAR",
+            "ReadAddress": 40097,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Gesamte Blindleistung"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Total Reactive Power"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_VAR_SF",
+            "Length": 0,
+            "Name": "Blindleistung Skalierungsfaktor",
+            "Profile": "",
+            "ReadAddress": 40101,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Blindleistung Skalierungsfaktor"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Reactive Power Scale Factor"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_VA",
+            "Length": 0,
+            "Name": "Gesamte Scheinleistung",
+            "Profile": "EM420_VA",
+            "ReadAddress": 40092,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Gesamte Scheinleistung"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Total Apparent Power"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_VA_SF",
+            "Length": 0,
+            "Name": "Scheinleistung Skalierungsfaktor",
+            "Profile": "",
+            "ReadAddress": 40096,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Scheinleistung Skalierungsfaktor"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Apparent Power Scale Factor"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_PF",
+            "Length": 0,
+            "Name": "Leistungsfaktor",
+            "Profile": "",
+            "ReadAddress": 40102,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Leistungsfaktor"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Average Power Factor"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_AC_PF_SF",
+            "Length": 0,
+            "Name": "Leistungsfaktor Skalierungsfaktor",
+            "Profile": "",
+            "ReadAddress": 40106,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Leistungsfaktor Skalierungsfaktor"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Power Factor Scale Factor"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 3,
+            "Factor": 0,
+            "Ident": "M_Exported",
+            "Length": 0,
+            "Name": "Einspeisung Wirkenergie gesamt",
+            "Profile": "EM420_kWh",
+            "ReadAddress": 40107,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Einspeisung Wirkenergie gesamt"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Total Exported Real Energy"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 3,
+            "Factor": 0,
+            "Ident": "M_Imported",
+            "Length": 0,
+            "Name": "Bezug Wirkenergie gesamt",
+            "Profile": "EM420_kWh",
+            "ReadAddress": 40115,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Bezug Wirkenergie gesamt"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Total Imported Real Energy"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 5,
+            "Factor": 0,
+            "Ident": "M_Energy_W_SF",
+            "Length": 0,
+            "Name": "Wirkenergie Skalierungsfaktor",
+            "Profile": "",
+            "ReadAddress": 40123,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Wirkenergie Skalierungsfaktor"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Real Energy Scale Factor"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        }
+    ],
+    "ByteOrder": 0,
+    "ByteOrderFloats": true,
+    "Active": true,
+    "ReferenceCountStartsAtZero": false,
+    "UseEnronMode": false,
+    "ConnectionType": "TCP",
+    "Type": "Energy_Meter",
+    "Manufacturer": "TQ Systems",
+    "Product": "EM420",
+    "Profiles": {
+        "EM420_kWh": {
+            "Associations": [],
+            "Digits": 1,
+            "Icon": "",
+            "MaxValue": 0.0,
+            "MinValue": 0.0,
+            "Prefix": "",
+            "StepSize": 0.0,
+            "Suffix": " Wh",
+            "Type": 2
+        },
+        "EM420_VA": {
+            "Associations": [],
+            "Digits": 0,
+            "Icon": "",
+            "MaxValue": 0.0,
+            "MinValue": 0.0,
+            "Prefix": "",
+            "StepSize": 0.0,
+            "Suffix": " VA",
+            "Type": 2
+        },
+        "EM420_VAR": {
+            "Associations": [],
+            "Digits": 0,
+            "Icon": "",
+            "MaxValue": 0.0,
+            "MinValue": 0.0,
+            "Prefix": "",
+            "StepSize": 0.0,
+            "Suffix": " var",
+            "Type": 2
+        }
+    },
+    "Requests": {
+        "Interval": 5000
+    },
+    "VirtualAddresses": []
+}
