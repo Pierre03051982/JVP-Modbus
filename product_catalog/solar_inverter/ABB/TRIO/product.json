@@ -1,0 +1,266 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Mean grid voltage",
+      "Profile": "ABB_TRIO_V",
+      "ReadAddress": 1090,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Mittlere Netzspannung"
+        },
+        {
+          "Language": "en",
+          "Name": "Mean grid voltage"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "AC output power",
+      "Profile": "ABB_TRIO_W",
+      "ReadAddress": 1094,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "AC-Ausgangsleistung"
+        },
+        {
+          "Language": "en",
+          "Name": "AC output power"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Grid frequency",
+      "Profile": "ABB_TRIO_Hz",
+      "ReadAddress": 1106,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Netzfrequenz"
+        },
+        {
+          "Language": "en",
+          "Name": "Grid frequency"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "DC power string 1",
+      "Profile": "ABB_TRIO_W",
+      "ReadAddress": 1108,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "DC-Leistung String 1"
+        },
+        {
+          "Language": "en",
+          "Name": "DC power string 1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "DC voltage string 1",
+      "Profile": "ABB_TRIO_V",
+      "ReadAddress": 1110,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "DC-Spannung String 1"
+        },
+        {
+          "Language": "en",
+          "Name": "DC voltage string 1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "DC current string 1",
+      "Profile": "ABB_TRIO_A",
+      "ReadAddress": 1112,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "DC-Strom String 1"
+        },
+        {
+          "Language": "en",
+          "Name": "DC current string 1"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Internal temperature",
+      "Profile": "ABB_TRIO_degC",
+      "ReadAddress": 1120,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Innentemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Internal temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 7,
+      "Factor": 1,
+      "Ident": "",
+      "Length": 0,
+      "Name": "Inverter temperature",
+      "Profile": "ABB_TRIO_degC",
+      "ReadAddress": 1122,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Wechselrichtertemperatur"
+        },
+        {
+          "Language": "en",
+          "Name": "Inverter temperature"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "ConnectionType": "RTU",
+  "Profiles": {
+    "ABB_TRIO_V": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " V",
+      "Type": 2
+    },
+    "ABB_TRIO_A": {
+      "Associations": [],
+      "Digits": 2,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " A",
+      "Type": 2
+    },
+    "ABB_TRIO_W": {
+      "Associations": [],
+      "Digits": 0,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " W",
+      "Type": 2
+    },
+    "ABB_TRIO_Hz": {
+      "Associations": [],
+      "Digits": 2,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " Hz",
+      "Type": 2
+    },
+    "ABB_TRIO_degC": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 0.0,
+      "MinValue": 0.0,
+      "Prefix": "",
+      "StepSize": 0.0,
+      "Suffix": " °C",
+      "Type": 2
+    }
+  },
+  "Type": "solar_inverter",
+  "Manufacturer": "ABB",
+  "Product": "TRIO",
+  "Requests": {
+    "Interval": 5000
+  },
+  "VirtualAddresses": []
+}
