@@ -167,6 +167,54 @@
             ],
             "WriteAddress": 0,
             "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": 0,
+            "DataType": 7,
+            "Factor": 0,
+            "Ident": "",
+            "Length": 0,
+            "Name": "Import Active Energy (kWh), FLOAT, slave=1",
+            "Profile": "~kWh",
+            "ReadAddress": 19068,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "en",
+                    "Name": "Import Active Energy"
+                },
+                {
+                    "Language": "de",
+                    "Name": "Wirkenergie Bezug"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
+        },
+        {
+            "Active": true,
+            "ByteOrder": 0,
+            "DataType": 7,
+            "Factor": 0,
+            "Ident": "",
+            "Length": 0,
+            "Name": "Export Active Energy (kWh), FLOAT, slave=1",
+            "Profile": "~kWh",
+            "ReadAddress": 19076,
+            "ReadFunctionCode": 3,
+            "Translation": [
+                {
+                    "Language": "en",
+                    "Name": "Export Active Energy"
+                },
+                {
+                    "Language": "de",
+                    "Name": "Wirkenergie Einspeisung"
+                }
+            ],
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0
         }
     ],
     "ByteOrder": 0,

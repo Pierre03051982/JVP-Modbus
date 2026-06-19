@@ -53,9 +53,9 @@
             "ByteOrder": -1,
             "DataType": 7,
             "Factor": 1,
-            "Name": "active Power",
+            "Name": "Import Active Energy",
             "Description": "",
-            "Profile": "",
+            "Profile": "~kWh",
             "ReadAddress": 73,
             "ReadFunctionCode": 4,
             "WriteAddress": 73,
@@ -63,11 +63,251 @@
             "Translation": [
                 {
                     "Language": "de",
-                    "Name": "Wirkleistung"
+                    "Name": "Wirkenergie Bezug"
                 },
                 {
                     "Language": "en",
-                    "Name": "Active Power"
+                    "Name": "Import Active Energy"
+                }
+            ],
+            "Interval": 6000
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 7,
+            "Factor": 1,
+            "Name": "Voltage L2",
+            "Description": "",
+            "Profile": "",
+            "ReadAddress": 3,
+            "ReadFunctionCode": 4,
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Spannung L2"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Voltage L2"
+                }
+            ],
+            "Interval": 6000
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 7,
+            "Factor": 1,
+            "Name": "Voltage L3",
+            "Description": "",
+            "Profile": "",
+            "ReadAddress": 5,
+            "ReadFunctionCode": 4,
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Spannung L3"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Voltage L3"
+                }
+            ],
+            "Interval": 6000
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 7,
+            "Factor": 1,
+            "Name": "Current L1",
+            "Description": "",
+            "Profile": "",
+            "ReadAddress": 7,
+            "ReadFunctionCode": 4,
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Strom L1"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Current L1"
+                }
+            ],
+            "Interval": 6000
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 7,
+            "Factor": 1,
+            "Name": "Current L2",
+            "Description": "",
+            "Profile": "",
+            "ReadAddress": 9,
+            "ReadFunctionCode": 4,
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Strom L2"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Current L2"
+                }
+            ],
+            "Interval": 6000
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 7,
+            "Factor": 1,
+            "Name": "Current L3",
+            "Description": "",
+            "Profile": "",
+            "ReadAddress": 11,
+            "ReadFunctionCode": 4,
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Strom L3"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Current L3"
+                }
+            ],
+            "Interval": 6000
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 7,
+            "Factor": 1,
+            "Name": "Active Power L1",
+            "Description": "",
+            "Profile": "",
+            "ReadAddress": 13,
+            "ReadFunctionCode": 4,
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Wirkleistung L1"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Active Power L1"
+                }
+            ],
+            "Interval": 6000
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 7,
+            "Factor": 1,
+            "Name": "Active Power L2",
+            "Description": "",
+            "Profile": "",
+            "ReadAddress": 15,
+            "ReadFunctionCode": 4,
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Wirkleistung L2"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Active Power L2"
+                }
+            ],
+            "Interval": 6000
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 7,
+            "Factor": 1,
+            "Name": "Active Power L3",
+            "Description": "",
+            "Profile": "",
+            "ReadAddress": 17,
+            "ReadFunctionCode": 4,
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Wirkleistung L3"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Active Power L3"
+                }
+            ],
+            "Interval": 6000
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 7,
+            "Factor": 1,
+            "Name": "Total System Power",
+            "Description": "",
+            "Profile": "",
+            "ReadAddress": 53,
+            "ReadFunctionCode": 4,
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Gesamtwirkleistung"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Total System Power"
+                }
+            ],
+            "Interval": 6000
+        },
+        {
+            "Active": true,
+            "ByteOrder": -1,
+            "DataType": 7,
+            "Factor": 1,
+            "Name": "Export Active Energy",
+            "Description": "",
+            "Profile": "",
+            "ReadAddress": 75,
+            "ReadFunctionCode": 4,
+            "WriteAddress": 0,
+            "WriteFunctionCode": 0,
+            "Translation": [
+                {
+                    "Language": "de",
+                    "Name": "Wirkenergie Einspeisung"
+                },
+                {
+                    "Language": "en",
+                    "Name": "Export Active Energy"
                 }
             ],
             "Interval": 6000
