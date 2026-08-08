@@ -109,6 +109,35 @@ mehreren Treffern).
 
 ---
 
+## Selbst-Check: eigenen Anschluss prüfen (`selbst_check.py`)
+
+Ein zweites Tool, das du **zuhause auf deinem Rechner** ausführst, um deine
+eigenen Lücken zu finden. Prüft nur, greift nichts an, verändert nichts.
+Nur Python 3, **kein nmap** nötig.
+
+```bash
+python selbst_check.py                 # voller Check inkl. Heimnetz-Scan
+python selbst_check.py --no-netscan    # nur dieser Rechner + Exposition
+python selbst_check.py --subnet 192.168.178.0/24   # Subnetz vorgeben
+```
+
+Es prüft:
+1. **Offene Ports auf deinem Rechner** (riskante wie 502/23/3389/445 werden markiert).
+2. **Deine öffentliche IP** + Links für einen **externen** Scan (Shodan etc.).
+3. **UPnP** am Router (öffnet still Ports → Risiko).
+4. **Router-Weboberfläche** erreichbar?
+5. **Heimnetz-Scan**: welches Gerät hat welche riskanten Ports offen
+   (z. B. Modbus 502, Telnet 23, RDP 3389, SMB 445 …).
+
+Am Ende kommt eine **priorisierte Lücken-Liste** (kritisch → info) mit
+konkreten Empfehlungen.
+
+> ⚠️ Nur das **eigene** Netz scannen! Portscans in fremden Netzen sind in
+> Deutschland unzulässig (§ 202a/c StGB). Das Skript scannt automatisch nur
+> dein lokales Subnetz.
+
+---
+
 ## Was diese Falle **nicht** tut (und warum)
 
 - ❌ Kein „Zurückhacken", keine Gegenangriffe, kein DoS gegen Angreifer —
