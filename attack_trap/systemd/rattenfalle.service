@@ -1,0 +1,20 @@
+[Unit]
+Description=Rattenfalle - defensive Angriffs-Falle fuer Webserver
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# Pfad ggf. anpassen, wenn das Repo woanders liegt:
+WorkingDirectory=/opt/JVP-Modbus/attack_trap
+ExecStart=/usr/bin/python3 /opt/JVP-Modbus/attack_trap/rattenfalle.py --config /opt/JVP-Modbus/attack_trap/config.json
+# root wird fuer die Firewall-Sperren benoetigt (nftables/iptables).
+User=root
+Restart=on-failure
+RestartSec=5
+# Etwas Haertung (Firewall braucht aber CAP_NET_ADMIN + Netzwerk):
+NoNewPrivileges=false
+AmbientCapabilities=CAP_NET_ADMIN CAP_NET_RAW CAP_NET_BIND_SERVICE
+
+[Install]
+WantedBy=multi-user.target

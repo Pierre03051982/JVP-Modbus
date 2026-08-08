@@ -1,0 +1,9 @@
+# Laufzeit-Dateien der Rattenfalle (nicht versionieren)
+bans.json
+bans.json.tmp
+rattenfalle.log
+*.log
+
+# Python
+__pycache__/
+*.pyc

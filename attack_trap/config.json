@@ -1,0 +1,34 @@
+{
+  "honeypot": {
+    "enabled": true,
+    "bind": "0.0.0.0",
+    "ports": [8080, 8443, 2323],
+    "tarpit": true,
+    "tarpit_seconds": 20,
+    "instant_ban": true
+  },
+  "log_watch": {
+    "enabled": false,
+    "files": ["/var/log/nginx/access.log"],
+    "format": "combined",
+    "strike_threshold": 3,
+    "strike_window_seconds": 60
+  },
+  "ban": {
+    "duration_seconds": 86400,
+    "store_file": "bans.json"
+  },
+  "whitelist": [
+    "127.0.0.0/8",
+    "10.0.0.0/8",
+    "172.16.0.0/12",
+    "192.168.0.0/16",
+    "169.254.0.0/16",
+    "::1/128",
+    "fe80::/10",
+    "fc00::/7"
+  ],
+  "firewall": "auto",
+  "signatures_file": "attack_signatures.json",
+  "log_file": "rattenfalle.log"
+}
