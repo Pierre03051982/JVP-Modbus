@@ -129,6 +129,50 @@ mehreren Treffern).
 
 ---
 
+## Gatekeeper: einen echten Dienst schützen (z. B. EMS auf Port 8079)
+
+Der **Gatekeeper** ist ein Schutz-Proxy, der **vor** deinem echten Dienst steht.
+Normale Zugriffe reicht er durch, Angreifer sperrt er automatisch — ohne
+legitime Nutzer zu blockieren.
+
+> ⚠️ **Nicht verwechseln mit dem Honeypot!** Honeypot-Ports sind leere Fallen
+> (jeder Zugriff = Sperre). Der Gatekeeper dagegen schützt einen **echten**
+> Dienst und lässt normalen Verkehr durch.
+
+**So wird geschützt (Beispiel EMS auf 8079):**
+
+```
+Internet ──▶ Router (Portweiterleitung)
+                 extern 8079  ──▶  PC: Gatekeeper 8179  ──▶  EMS 127.0.0.1:8079
+```
+
+1. In `config.json` ist der Gatekeeper aktiviert:
+   ```json
+   "gatekeeper": {
+     "enabled": true,
+     "listen_port": 8179,          // Gatekeeper lauscht hier
+     "backend_host": "127.0.0.1",  // dein echtes EMS ...
+     "backend_port": 8079,         // ... auf Port 8079
+     "soft_limit_per_minute": 300, // darüber: einzelne Anfrage gedrosselt (429)
+     "hard_limit_per_minute": 1200 // darüber: IP gesperrt (Flood/DoS)
+   }
+   ```
+2. **Im Router die Portweiterleitung umstellen:** extern **8079** nicht mehr
+   direkt aufs EMS, sondern auf **8179** (den Gatekeeper) auf demselben PC.
+   Das EMS bleibt lokal auf 8079 — nur eben hinter dem Gatekeeper.
+
+**Verhalten (bewusst schonend, um dein EMS nicht zu blockieren):**
+- Eindeutiger Angriff (z. B. `/.env`, `/wp-login.php`, Scanner-Tools) → **sofort gesperrt**.
+- Zu viele Anfragen (soft-limit) → einzelne Anfrage wird nur **gedrosselt** (HTTP 429), **keine** Dauersperre.
+- Erst massive Fluten (hard-limit) → IP **gesperrt**.
+- Private Netze (Whitelist) werden nie gesperrt.
+
+> 💡 Greifst du selbst von unterwegs (Mobilfunk) aufs EMS zu und stößt an die
+> Limits? Dann trage deine feste externe IP in die `whitelist` ein, oder erhöhe
+> `soft_limit_per_minute`.
+
+---
+
 ## Selbst-Check: eigenen Anschluss prüfen (`selbst_check.py`)
 
 Ein zweites Tool, das du **zuhause auf deinem Rechner** ausführst, um deine

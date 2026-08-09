@@ -36,6 +36,7 @@ import os
 import re
 import shutil
 import signal
+import socket
 import socketserver
 import subprocess
 import sys
@@ -64,6 +65,20 @@ DEFAULT_CONFIG = {
         "format": "combined",
         "strike_threshold": 3,
         "strike_window_seconds": 60,
+    },
+    # Schutz-Proxy vor einem ECHTEN Dienst (z. B. EMS-Weboberflaeche).
+    # Router-Weiterleitung dann auf listen_port zeigen lassen, NICHT direkt
+    # auf den Dienst. Der Gatekeeper leitet an backend_host:backend_port weiter,
+    # sperrt aber Angreifer. Er sperrt NUR bei eindeutigen Angriffs-Signaturen;
+    # zu viele Anfragen werden nur gedrosselt (keine Dauersperre legitimer Nutzer).
+    "gatekeeper": {
+        "enabled": False,
+        "listen": "0.0.0.0",
+        "listen_port": 8179,
+        "backend_host": "127.0.0.1",
+        "backend_port": 8079,
+        "soft_limit_per_minute": 300,   # darueber: einzelne Verbindung droppen
+        "hard_limit_per_minute": 1200,  # darueber: IP wirklich sperren (Flood)
     },
     "ban": {
         "duration_seconds": 86400,
@@ -403,6 +418,16 @@ class BanManager:
     def status(self):
         return dict(self.bans)
 
+    def is_banned(self, ip):
+        """True, wenn die IP aktuell (noch nicht abgelaufen) gesperrt ist."""
+        v = self.bans.get(ip)
+        if not v:
+            return False
+        exp = v.get("expires", 0)
+        if exp and exp <= time.time():
+            return False
+        return True
+
 
 # --------------------------------------------------------------------------- #
 # Signatur-Erkennung
@@ -572,6 +597,205 @@ class HoneypotService:
 
 
 # --------------------------------------------------------------------------- #
+# Gatekeeper: Schutz-Proxy vor einem echten Dienst (z. B. EMS auf 8079)
+# --------------------------------------------------------------------------- #
+class GatekeeperService:
+    """Reverse-Proxy: nimmt Verbindungen an, filtert Angreifer, leitet den
+    Rest an den echten Dienst weiter. Schuetzt ein exponiertes EMS, ohne es
+    fuer legitime Nutzer zu blockieren."""
+
+    def __init__(self, cfg, bans, matcher, whitelist, log):
+        self.cfg = cfg.get("gatekeeper", {})
+        self.bans = bans
+        self.matcher = matcher
+        self.whitelist = whitelist
+        self.log = log
+        self.listen = self.cfg.get("listen", "0.0.0.0")
+        self.port = int(self.cfg.get("listen_port", 8179))
+        self.backend = (self.cfg.get("backend_host", "127.0.0.1"),
+                        int(self.cfg.get("backend_port", 8079)))
+        self.soft = int(self.cfg.get("soft_limit_per_minute", 300))
+        self.hard = int(self.cfg.get("hard_limit_per_minute", 1200))
+        self.hits = {}  # ip -> [timestamps]
+        self.hits_lock = threading.Lock()
+        self.srv = None
+        self.stop_flag = threading.Event()
+
+    def start(self):
+        if not self.cfg.get("enabled"):
+            return
+        try:
+            self.srv = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            self.srv.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            self.srv.bind((self.listen, self.port))
+            self.srv.listen(128)
+        except OSError as exc:
+            self.log.error("Gatekeeper-Port %s nicht nutzbar: %s (laeuft dort schon "
+                           "der EMS? Bitte anderen listen_port waehlen)"
+                           % (self.port, exc))
+            self.srv = None
+            return
+        threading.Thread(target=self._accept_loop, daemon=True).start()
+        self.log.info("Gatekeeper: %s:%d  ->  %s:%d (Schutz-Proxy vor dem Dienst)"
+                      % (self.listen, self.port, self.backend[0], self.backend[1]))
+
+    def stop(self):
+        self.stop_flag.set()
+        if self.srv:
+            try:
+                self.srv.close()
+            except OSError:
+                pass
+
+    def _accept_loop(self):
+        while not self.stop_flag.is_set():
+            try:
+                conn, addr = self.srv.accept()
+            except OSError:
+                break
+            threading.Thread(target=self._handle, args=(conn, addr),
+                             daemon=True).start()
+
+    def _rate(self, ip):
+        """Anfragen/Minute je IP -> ('ok'|'soft'|'hard')."""
+        now = time.time()
+        with self.hits_lock:
+            hits = [t for t in self.hits.get(ip, []) if now - t < 60]
+            hits.append(now)
+            self.hits[ip] = hits
+            count = len(hits)
+        if count > self.hard:
+            return "hard"
+        if count > self.soft:
+            return "soft"
+        return "ok"
+
+    def _handle(self, conn, addr):
+        ip = addr[0]
+        try:
+            # 1) Bereits gesperrte IPs sofort abweisen
+            if self.bans.is_banned(ip):
+                conn.close()
+                return
+
+            trusted = self.whitelist.contains(ip)
+
+            # 2) Ratenbegrenzung (Whitelist ausgenommen)
+            if not trusted:
+                level = self._rate(ip)
+                if level == "hard":
+                    self.bans.ban(ip, "Gatekeeper: Flood (>%d Anfragen/min)" % self.hard)
+                    conn.close()
+                    return
+                if level == "soft":
+                    self._reply(conn, 429, "Too Many Requests")
+                    conn.close()
+                    return
+
+            # 3) Erste Anfrage lesen und auf Angriffs-Signaturen pruefen
+            conn.settimeout(8)
+            try:
+                initial = conn.recv(65536)
+            except (socket.timeout, OSError):
+                initial = b""
+            conn.settimeout(None)
+            if not initial:
+                conn.close()
+                return
+
+            path, ua = _parse_http_head(initial)
+            if not trusted:
+                kind, reason = self.matcher.check(path, ua)
+                if kind == "instant":
+                    self.bans.ban(ip, "Gatekeeper: %s" % reason)
+                    self.log.warn("Gatekeeper blockiert %s -> %s (UA=%r)"
+                                  % (ip, path, ua[:80]))
+                    self._reply(conn, 403, "Forbidden")
+                    conn.close()
+                    return
+
+            # 4) Durchreichen an den echten Dienst
+            self._proxy(conn, initial)
+        except Exception as exc:  # pragma: no cover - defensiv
+            self.log.error("Gatekeeper-Fehler fuer %s: %s" % (ip, exc))
+            try:
+                conn.close()
+            except OSError:
+                pass
+
+    def _proxy(self, client, initial):
+        try:
+            backend = socket.create_connection(self.backend, timeout=10)
+        except OSError as exc:
+            self.log.error("Backend %s:%d nicht erreichbar: %s"
+                           % (self.backend[0], self.backend[1], exc))
+            self._reply(client, 502, "Bad Gateway")
+            client.close()
+            return
+        try:
+            backend.sendall(initial)
+        except OSError:
+            backend.close()
+            client.close()
+            return
+        t1 = threading.Thread(target=_pump, args=(client, backend), daemon=True)
+        t2 = threading.Thread(target=_pump, args=(backend, client), daemon=True)
+        t1.start()
+        t2.start()
+        t1.join()
+        t2.join()
+        for s in (client, backend):
+            try:
+                s.close()
+            except OSError:
+                pass
+
+    @staticmethod
+    def _reply(conn, code, text):
+        body = ("%d %s" % (code, text)).encode()
+        msg = (b"HTTP/1.1 %d %s\r\nContent-Length: %d\r\nConnection: close\r\n\r\n%s"
+               % (code, text.encode(), len(body), body))
+        try:
+            conn.sendall(msg)
+        except OSError:
+            pass
+
+
+def _parse_http_head(data):
+    """Extrahiert (Pfad, User-Agent) aus den ersten Bytes einer HTTP-Anfrage."""
+    try:
+        head = data.split(b"\r\n\r\n", 1)[0].decode("latin-1", "replace")
+        lines = head.split("\r\n")
+        first = lines[0] if lines else ""
+        parts = first.split()
+        path = parts[1] if len(parts) >= 2 else "/"
+        ua = ""
+        for line in lines[1:]:
+            if line.lower().startswith("user-agent:"):
+                ua = line.split(":", 1)[1].strip()
+                break
+        return path, ua
+    except Exception:
+        return "/", ""
+
+
+def _pump(src, dst):
+    try:
+        while True:
+            data = src.recv(65536)
+            if not data:
+                break
+            dst.sendall(data)
+    except OSError:
+        pass
+    finally:
+        try:
+            dst.shutdown(socket.SHUT_WR)
+        except OSError:
+            pass
+
+
+# --------------------------------------------------------------------------- #
 # Log-Watcher (Access-Log des echten Webservers)
 # --------------------------------------------------------------------------- #
 COMBINED_RE = re.compile(
@@ -725,11 +949,14 @@ def run(cfg, log):
 
     honeypot = HoneypotService(cfg, bans, matcher, log)
     watcher = LogWatcher(cfg, bans, matcher, log)
+    gatekeeper = GatekeeperService(cfg, bans, matcher, whitelist, log)
     honeypot.start()
     watcher.start()
+    gatekeeper.start()
 
-    if not honeypot.servers and not watcher.threads:
-        log.error("Weder Honeypot noch Log-Watcher aktiv - bitte config.json pruefen.")
+    if not honeypot.servers and not watcher.threads and not gatekeeper.srv:
+        log.error("Weder Honeypot, Log-Watcher noch Gatekeeper aktiv - "
+                  "bitte config.json pruefen.")
         return
 
     stop = threading.Event()
@@ -749,6 +976,7 @@ def run(cfg, log):
     finally:
         honeypot.stop()
         watcher.stop()
+        gatekeeper.stop()
         log.info("Rattenfalle beendet.")
 
 
