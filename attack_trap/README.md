@@ -56,6 +56,26 @@ Auf **Windows** (Eingabeaufforderung als Administrator):
 python rattenfalle.py --config config.json
 ```
 
+### Windows: fest einrichten (Autostart, läuft im Hintergrund)
+
+Damit die Rattenfalle **dauerhaft** läuft — automatisch bei jedem Windows-Start,
+wie ein fest eingerichteter Dienst:
+
+1. Ordner `attack_trap\windows\` öffnen.
+2. **`4 - Einrichten (Autostart installieren).bat`** per **Rechtsklick →
+   „Als Administrator ausführen"**.
+
+Das registriert eine geplante Aufgabe `JVP-Rattenfalle` (Start beim Systemstart,
+als `SYSTEM` mit den nötigen Rechten für echte Firewall-Sperren) und startet sie
+sofort. Kontrolle in der **Aufgabenplanung** unter dem Namen `JVP-Rattenfalle`.
+
+- **Status:** `python rattenfalle.py --status`
+- **Entfernen:** `5 - Deinstallieren (Autostart entfernen).bat` (als Admin)
+
+> 💡 Liegt der Ordner in OneDrive: einmal per Rechtsklick auf den Ordner
+> **„Immer auf diesem Gerät behalten"** wählen, damit die Dateien lokal
+> vorhanden sind (sonst findet der Hintergrunddienst sie evtl. nicht).
+
 ### Als Dienst (Linux/systemd)
 ```bash
 sudo cp systemd/rattenfalle.service /etc/systemd/system/
