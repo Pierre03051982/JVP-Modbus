@@ -1,0 +1,2 @@
+# Windows-Startdateien immer mit CRLF auschecken (sonst starten .bat evtl. nicht)
+*.bat text eol=crlf
