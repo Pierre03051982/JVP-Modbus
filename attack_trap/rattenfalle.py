@@ -54,7 +54,7 @@ DEFAULT_CONFIG = {
     "honeypot": {
         "enabled": True,
         "bind": "0.0.0.0",
-        "ports": [8080, 8443, 2323],
+        "ports": [8080, 2323, 8081],
         "tarpit": True,
         "tarpit_seconds": 20,
         "instant_ban": True,
@@ -369,11 +369,29 @@ class BanManager:
         self._save()
 
     def _save(self):
+        tmp = self.store_file + ".tmp"
         try:
-            tmp = self.store_file + ".tmp"
             with open(tmp, "w", encoding="utf-8") as fh:
                 json.dump(self.bans, fh, indent=2)
-            os.replace(tmp, self.store_file)
+        except OSError as exc:
+            self.log.error("Ban-Store schreiben fehlgeschlagen: %s" % exc)
+            return
+        # os.replace kann unter Windows scheitern, wenn Virenscanner/Indexer
+        # oder OneDrive die Datei kurz sperren -> mehrfach versuchen, dann
+        # notfalls direkt (nicht-atomar) schreiben.
+        for _ in range(5):
+            try:
+                os.replace(tmp, self.store_file)
+                return
+            except OSError:
+                time.sleep(0.3)
+        try:
+            with open(self.store_file, "w", encoding="utf-8") as fh:
+                json.dump(self.bans, fh, indent=2)
+            try:
+                os.remove(tmp)
+            except OSError:
+                pass
         except OSError as exc:
             self.log.error("Ban-Store speichern fehlgeschlagen: %s" % exc)
 

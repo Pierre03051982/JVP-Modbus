@@ -2,7 +2,7 @@
   "honeypot": {
     "enabled": true,
     "bind": "0.0.0.0",
-    "ports": [8080, 8443, 2323],
+    "ports": [8080, 2323, 8081],
     "tarpit": true,
     "tarpit_seconds": 20,
     "instant_ban": true
