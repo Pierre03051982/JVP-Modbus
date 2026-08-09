@@ -629,49 +629,81 @@ class GatekeeperService:
         self.whitelist = whitelist
         self.log = log
         self.listen = self.cfg.get("listen", "0.0.0.0")
-        self.port = int(self.cfg.get("listen_port", 8179))
-        self.backend = (self.cfg.get("backend_host", "127.0.0.1"),
-                        int(self.cfg.get("backend_port", 8079)))
         self.soft = int(self.cfg.get("soft_limit_per_minute", 300))
         self.hard = int(self.cfg.get("hard_limit_per_minute", 1200))
         self.hits = {}  # ip -> [timestamps]
         self.hits_lock = threading.Lock()
-        self.srv = None
+        self.servers = []
         self.stop_flag = threading.Event()
+        self.routes = self._build_routes()
+
+    def _build_routes(self):
+        """Baut die Weiterleitungs-Wege. Neu: Liste 'routes'. Alt (kompatibel):
+        einzelne Felder listen_port/backend_host/backend_port."""
+        routes = []
+        raw = self.cfg.get("routes")
+        if raw:
+            for r in raw:
+                routes.append({
+                    "listen_port": int(r.get("listen_port")),
+                    "backend": (r.get("backend_host", "127.0.0.1"),
+                                int(r.get("backend_port"))),
+                    # inspect_http=False fuer HTTPS/TLS: nur durchreichen,
+                    # da verschluesselter Inhalt nicht lesbar ist.
+                    "inspect": bool(r.get("inspect_http", True)),
+                })
+        else:
+            routes.append({
+                "listen_port": int(self.cfg.get("listen_port", 8179)),
+                "backend": (self.cfg.get("backend_host", "127.0.0.1"),
+                            int(self.cfg.get("backend_port", 8079))),
+                "inspect": True,
+            })
+        return routes
+
+    @property
+    def srv(self):
+        """Rueckwaertskompatibel: wahr, wenn mindestens ein Listener laeuft."""
+        return bool(self.servers)
 
     def start(self):
         if not self.cfg.get("enabled"):
             return
-        try:
-            self.srv = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            self.srv.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-            self.srv.bind((self.listen, self.port))
-            self.srv.listen(128)
-        except OSError as exc:
-            self.log.error("Gatekeeper-Port %s nicht nutzbar: %s (laeuft dort schon "
-                           "der EMS? Bitte anderen listen_port waehlen)"
-                           % (self.port, exc))
-            self.srv = None
-            return
-        threading.Thread(target=self._accept_loop, daemon=True).start()
-        self.log.info("Gatekeeper: %s:%d  ->  %s:%d (Schutz-Proxy vor dem Dienst)"
-                      % (self.listen, self.port, self.backend[0], self.backend[1]))
+        for route in self.routes:
+            port = route["listen_port"]
+            try:
+                srv = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                srv.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+                srv.bind((self.listen, port))
+                srv.listen(128)
+            except OSError as exc:
+                self.log.error("Gatekeeper-Port %s nicht nutzbar: %s (laeuft dort "
+                               "schon ein Dienst? anderen listen_port waehlen)"
+                               % (port, exc))
+                continue
+            self.servers.append(srv)
+            threading.Thread(target=self._accept_loop, args=(srv, route),
+                             daemon=True).start()
+            art = "HTTP + Pruefung" if route["inspect"] else "TLS/HTTPS durchgereicht"
+            self.log.info("Gatekeeper: %s:%d  ->  %s:%d  (%s)"
+                          % (self.listen, port, route["backend"][0],
+                             route["backend"][1], art))
 
     def stop(self):
         self.stop_flag.set()
-        if self.srv:
+        for srv in self.servers:
             try:
-                self.srv.close()
+                srv.close()
             except OSError:
                 pass
 
-    def _accept_loop(self):
+    def _accept_loop(self, srv, route):
         while not self.stop_flag.is_set():
             try:
-                conn, addr = self.srv.accept()
+                conn, addr = srv.accept()
             except OSError:
                 break
-            threading.Thread(target=self._handle, args=(conn, addr),
+            threading.Thread(target=self._handle, args=(conn, addr, route),
                              daemon=True).start()
 
     def _rate(self, ip):
@@ -688,8 +720,9 @@ class GatekeeperService:
             return "soft"
         return "ok"
 
-    def _handle(self, conn, addr):
+    def _handle(self, conn, addr, route):
         ip = addr[0]
+        inspect = route["inspect"]
         try:
             # 1) Bereits gesperrte IPs sofort abweisen
             if self.bans.is_banned(ip):
@@ -706,11 +739,12 @@ class GatekeeperService:
                     conn.close()
                     return
                 if level == "soft":
-                    self._reply(conn, 429, "Too Many Requests")
+                    if inspect:  # bei TLS keine Klartext-Antwort senden
+                        self._reply(conn, 429, "Too Many Requests")
                     conn.close()
                     return
 
-            # 3) Erste Anfrage lesen und auf Angriffs-Signaturen pruefen
+            # 3) Erste Bytes lesen; bei HTTP auf Angriffs-Signaturen pruefen
             conn.settimeout(8)
             try:
                 initial = conn.recv(65536)
@@ -721,8 +755,8 @@ class GatekeeperService:
                 conn.close()
                 return
 
-            path, ua = _parse_http_head(initial)
-            if not trusted:
+            if inspect and not trusted:
+                path, ua = _parse_http_head(initial)
                 kind, reason = self.matcher.check(path, ua)
                 if kind == "instant":
                     self.bans.ban(ip, "Gatekeeper: %s" % reason)
@@ -733,7 +767,7 @@ class GatekeeperService:
                     return
 
             # 4) Durchreichen an den echten Dienst
-            self._proxy(conn, initial)
+            self._proxy(conn, initial, route["backend"])
         except Exception as exc:  # pragma: no cover - defensiv
             self.log.error("Gatekeeper-Fehler fuer %s: %s" % (ip, exc))
             try:
@@ -741,28 +775,30 @@ class GatekeeperService:
             except OSError:
                 pass
 
-    def _proxy(self, client, initial):
+    def _proxy(self, client, initial, backend):
         try:
-            backend = socket.create_connection(self.backend, timeout=10)
+            back = socket.create_connection(backend, timeout=10)
         except OSError as exc:
             self.log.error("Backend %s:%d nicht erreichbar: %s"
-                           % (self.backend[0], self.backend[1], exc))
-            self._reply(client, 502, "Bad Gateway")
-            client.close()
+                           % (backend[0], backend[1], exc))
+            try:
+                client.close()
+            except OSError:
+                pass
             return
         try:
-            backend.sendall(initial)
+            back.sendall(initial)
         except OSError:
-            backend.close()
+            back.close()
             client.close()
             return
-        t1 = threading.Thread(target=_pump, args=(client, backend), daemon=True)
-        t2 = threading.Thread(target=_pump, args=(backend, client), daemon=True)
+        t1 = threading.Thread(target=_pump, args=(client, back), daemon=True)
+        t2 = threading.Thread(target=_pump, args=(back, client), daemon=True)
         t1.start()
         t2.start()
         t1.join()
         t2.join()
-        for s in (client, backend):
+        for s in (client, back):
             try:
                 s.close()
             except OSError:

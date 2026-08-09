@@ -50,7 +50,11 @@ try {
     $cfg = Get-Content (Join-Path $trapDir 'config.json') -Raw | ConvertFrom-Json
     $ports = @()
     if ($cfg.gatekeeper -and $cfg.gatekeeper.enabled) {
-        $ports += [int]$cfg.gatekeeper.listen_port
+        if ($cfg.gatekeeper.routes) {
+            foreach ($r in $cfg.gatekeeper.routes) { $ports += [int]$r.listen_port }
+        } elseif ($cfg.gatekeeper.listen_port) {
+            $ports += [int]$cfg.gatekeeper.listen_port
+        }
     }
     if ($cfg.honeypot -and $cfg.honeypot.enabled) {
         foreach ($p in $cfg.honeypot.ports) { $ports += [int]$p }
