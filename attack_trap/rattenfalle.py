@@ -703,6 +703,7 @@ class GatekeeperService:
                 conn, addr = srv.accept()
             except OSError:
                 break
+            _set_nodelay(conn)  # Latenz senken (kein Nagle-Puffern)
             threading.Thread(target=self._handle, args=(conn, addr, route),
                              daemon=True).start()
 
@@ -786,6 +787,7 @@ class GatekeeperService:
             except OSError:
                 pass
             return
+        _set_nodelay(back)  # Latenz senken (kein Nagle-Puffern)
         try:
             back.sendall(initial)
         except OSError:
@@ -831,6 +833,15 @@ def _parse_http_head(data):
         return path, ua
     except Exception:
         return "/", ""
+
+
+def _set_nodelay(sock):
+    """TCP_NODELAY aktivieren: kleine Pakete sofort senden (keine Nagle-
+    Verzoegerung). Wichtig fuer fluessige, interaktive Weiterleitung."""
+    try:
+        sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+    except OSError:
+        pass
 
 
 def _pump(src, dst):
