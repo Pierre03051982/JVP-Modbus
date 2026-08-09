@@ -44,6 +44,27 @@ Register-ScheduledTask -TaskName 'JVP-Rattenfalle' -Action $action -Trigger $tri
     -Principal $principal -Settings $settings `
     -Description 'JVP Rattenfalle - defensive Angriffs-Falle (Autostart)' -Force | Out-Null
 
+# Windows-Firewall: eingehende Ports fuer Gatekeeper + Honeypot freigeben,
+# sonst kommen Anfragen von aussen gar nicht bis zur Rattenfalle durch.
+try {
+    $cfg = Get-Content (Join-Path $trapDir 'config.json') -Raw | ConvertFrom-Json
+    $ports = @()
+    if ($cfg.gatekeeper -and $cfg.gatekeeper.enabled) {
+        $ports += [int]$cfg.gatekeeper.listen_port
+    }
+    if ($cfg.honeypot -and $cfg.honeypot.enabled) {
+        foreach ($p in $cfg.honeypot.ports) { $ports += [int]$p }
+    }
+    foreach ($p in ($ports | Sort-Object -Unique)) {
+        $rn = "JVP-Rattenfalle TCP $p"
+        cmd /c "netsh advfirewall firewall delete rule name=`"$rn`"" > $null 2>&1
+        cmd /c "netsh advfirewall firewall add rule name=`"$rn`" dir=in action=allow protocol=TCP localport=$p" > $null 2>&1
+        Write-Host "Firewall: eingehend TCP $p freigegeben"
+    }
+} catch {
+    Write-Host "Hinweis: Firewall-Ports nicht automatisch freigegeben ($_)." -ForegroundColor Yellow
+}
+
 # sofort starten
 Start-ScheduledTask -TaskName 'JVP-Rattenfalle'
 
