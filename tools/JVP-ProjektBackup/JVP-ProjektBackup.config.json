@@ -1,0 +1,53 @@
+{
+  "ExportFolder": "%PUBLIC%\\Documents\\JVP-Backup",
+  "ZipPrefix": "JVP-Projekt",
+
+  "StopIIS": true,
+  "Services": [],
+
+  "Programs": [
+    {
+      "Name": "SDV",
+      "ProcessName": "*SDV*",
+      "ConfirmDialogTexts": [ "beenden", "speichern" ],
+      "ConfirmButtons": [ "Ja", "Yes", "OK" ],
+      "CloseTimeoutSeconds": 90,
+      "Restart": true
+    },
+    {
+      "Name": "KNX",
+      "ProcessName": "*KNX*",
+      "ConfirmDialogTexts": [ "beenden", "speichern" ],
+      "ConfirmButtons": [ "Ja", "Yes", "OK" ],
+      "CloseTimeoutSeconds": 90,
+      "Restart": true
+    }
+  ],
+
+  "Sources": [
+    {
+      "Name": "JVP_Projekt",
+      "Path": "%ProgramData%\\JUNG",
+      "Optional": true,
+      "Include": [ "*" ],
+      "Exclude": [ "*.log", "Log/*", "Logs/*", "Temp/*" ]
+    },
+    {
+      "Name": "JVP_Visu",
+      "Path": "%SystemDrive%\\inetpub\\wwwroot\\JVP",
+      "Optional": true,
+      "Include": [ "*" ],
+      "Exclude": [ "*.log", "Logs/*", "Temp/*" ]
+    }
+  ],
+
+  "ScanProjectFilesForReferences": true,
+  "ReferenceScanExtensions": [ ".prj" ],
+  "ReferenceExcludeRoots": [ "%SystemRoot%", "%ProgramFiles%", "%ProgramFiles(x86)%" ],
+
+  "MirrorOnImport": true,
+  "SafetyBackupBeforeImport": true,
+  "KillIfNotClosed": false,
+  "StartProgramsUnelevated": true,
+  "ProgramStartDelaySeconds": 5
+}
