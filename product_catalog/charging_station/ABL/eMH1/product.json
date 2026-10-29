@@ -1,0 +1,310 @@
+{
+  "Addresses": [
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Description": "R2 = 2 Register ab 0x0001, 32 Bit: 31..24 = 0x01 (Registerecho), 23..22 Leiterplatte (00 = 141215, 01 = 160307, 10 = 170725), 21..16 Geräte-ID, 15..12 Firmware Major, 11..8 Firmware Minor, Bit 7 Kodierwiderstand CS wird ausgewertet, Bit 6 Upstream-Timeout aktiv, Bit 5 interne Phasenstrommessung, Bit 4 interner RDC-MD, Bit 3 Steckdose, Bit 2 Schweißerkennung (Schütz), Bits 1..0 Freigabeeingang (00 ohne Funktion, 01 muss für B1->B2 geschlossen sein, 10 geschlossen = Ladepunkt freigegeben, 11 ungültig).",
+      "Factor": 1,
+      "Ident": "AblDeviceInfo",
+      "Length": 0,
+      "Name": "Device ID, firmware revision and configuration",
+      "Profile": "",
+      "ReadAddress": 1,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Geräte-ID, Firmware und Konfiguration"
+        },
+        {
+          "Language": "en",
+          "Name": "Device ID, firmware revision and configuration"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Description": "R1 = 1 Register 0x0003, 16 Bit: 15..8 = 0x03 (Registerecho), 7..6 Stoppbits (00 = 1 Standard, 11 = 2), 5..4 Parität (00 keine, 01 ungerade, 10 gerade = Standard), 3..0 Baudrate (0101 = 9600, 0110 = 19200, 0111 = 38400 Standard, 1000 = 57600).",
+      "Factor": 1,
+      "Ident": "AblModbusSettings",
+      "Length": 0,
+      "Name": "MODBUS settings",
+      "Profile": "",
+      "ReadAddress": 3,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "MODBUS-Einstellungen"
+        },
+        {
+          "Language": "en",
+          "Name": "MODBUS settings"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": false,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Description": "W1 = 1 Register 0x0005, Broadcast möglich. Werte: 0x3838 Schieflasterkennung 20 A ein (E2 nötig), 0x5A5A Reset, 0xA1A1 nach A1 (E0 oder E2 nötig), 0xE0E0 nach E0 = Ladepunkt aus, 0xE2E2 nach E2 (A1 oder E0 nötig), 0xF1F1 nach F1 (löst den FI aus, falls so eingerichtet). Andere Werte nicht verwenden; üblich sind 0xE0E0 und 0xE2E2. Inaktiv, weil ein falscher Wert den Ladepunkt abschaltet - im Ladebetrieb nicht schreiben.",
+      "Factor": 1,
+      "Ident": "AblModifyState",
+      "Length": 0,
+      "Name": "Modify state of outlet",
+      "Profile": "",
+      "ReadAddress": 5,
+      "ReadFunctionCode": 0,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Zustand des Ladepunkts ändern"
+        },
+        {
+          "Language": "en",
+          "Name": "Modify state of outlet"
+        }
+      ],
+      "WriteAddress": 5,
+      "WriteFunctionCode": 16
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 3,
+      "Description": "R2 = 2 Register ab 0x0006, 32 Bit: 31..24 = 0x06 (Registerecho), 23..16 Zeiger der Zustandsmaschine, Bit 15 Upstream-Timeout löst F4 (1) statt F14 (0) aus, Bit 14 = 1: nach dem Einschalten kein B1->B2, 13..12 Grenzwerte CP (00 Standard, 10 China), Bit 9 Upstream-Kommunikation verloren (BC6, Timeout kann F4/F14 auslösen), Bit 8 Schieflast erkannt (BC3), Bit 7 Platine 60-80 °C (BC5), Bit 6 interne Phasenstrommessung ausgefallen (BC4), Bit 5/4/3 Übergang E0->A1 / B1->B2 / A1->B1 gesperrt, Bits 2..0 Strom des Autos gegen Ic: 000 bis 100 %, 001 bis 105 %, 101 bis 110 % (Fehler nach 1000 s), 011 bis 120 % (Fehler nach 100 s), 111 über 120 % (Fehler nach 10 s); China-Grenzwerte weichen ab.",
+      "Factor": 1,
+      "Ident": "AblSystemFlags",
+      "Length": 0,
+      "Name": "System flags",
+      "Profile": "",
+      "ReadAddress": 6,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Systemflags"
+        },
+        {
+          "Language": "en",
+          "Name": "System flags"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Description": "W1 = 1 Register 0x0014, Schreiben mit Funktion 0x10, Broadcast möglich; Lesen ist nicht dokumentiert. Rohwert = Tastgrad[%] × 10 (0x0050..0x03E8 = 8..100 %), hier mit Faktor 0,1 in %. Strom nach IEC 61851-1: I = Tastgrad × 0,6 A, also 6 A = 10 % (Rohwert 100), 10 A = 16,6 % (166), 16 A = 26,6 % (266). 100 % (Rohwert 0x03E8) = kein Strom erlaubt (Ladepause). Die Box begrenzt Icmax intern auf Idefault.",
+      "Factor": 0.1,
+      "Ident": "AblIcmax",
+      "Length": 0,
+      "Name": "Icmax as duty cycle",
+      "Profile": "ABL.DutyCycle",
+      "ReadAddress": 20,
+      "ReadFunctionCode": 0,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Ladestrom Icmax als Tastgrad"
+        },
+        {
+          "Language": "en",
+          "Name": "Icmax as duty cycle"
+        }
+      ],
+      "WriteAddress": 20,
+      "WriteFunctionCode": 16
+    },
+    {
+      "Active": false,
+      "ByteOrder": -1,
+      "DataType": 2,
+      "Description": "W1 = 1 Register 0x002C, nur im Zustand E2, Broadcast möglich: 15..14 Upstream-Timeout und F4 (01 aus, 10 ein, 00/11 unverändert), 13..12 nach dem Einschalten bei angestecktem Auto (01 weiter nach B2, 10 bleibt in B1 - Freigabe nötig, 00/11 unverändert), 11..8 reserviert (0000), 7..0 Geräte-ID 0x01..0x10. Einrichtung, nicht Betrieb - deshalb inaktiv.",
+      "Factor": 1,
+      "Ident": "AblSetDeviceId",
+      "Length": 0,
+      "Name": "Set device ID, upstream timeout and B1->B2 after power-cycle",
+      "Profile": "",
+      "ReadAddress": 44,
+      "ReadFunctionCode": 0,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Geräte-ID, Upstream-Timeout und B1->B2 nach Neustart setzen"
+        },
+        {
+          "Language": "en",
+          "Name": "Set device ID, upstream timeout and B1->B2 after power-cycle"
+        }
+      ],
+      "WriteAddress": 44,
+      "WriteFunctionCode": 16
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 14,
+      "Description": "R5 = 5 Register ab 0x002E (10 Byte): Byte 0 = 0x2E (Registerecho), Byte 1 = Zustand (Hex wie der Name: 0xA1 = A1, 0xB2 = B2, 0xC2 = C2, 0xE0 = E0, 0xF1 = F1 ...), Byte 2..3: Bit 15 UCP <= 10 V = Auto angesteckt (ungültig in E und F), Bit 14 Tastgrad reduziert (BC3..BC6), Bit 13 EN2 geschlossen, Bit 12 EN1 geschlossen, Bits 11..0 Tastgrad Ic × 10; Byte 4..9 Ict1..Ict3 in 0,1 A (0..80 A), 0x03E8 = Messung nicht verfügbar oder Zustand A.",
+      "Factor": 1,
+      "Ident": "AblCurrentFull",
+      "Length": 10,
+      "Name": "State, duty cycle and phase currents (0.1 A)",
+      "Profile": "",
+      "ReadAddress": 46,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Zustand, Tastgrad und Phasenströme (0,1 A)"
+        },
+        {
+          "Language": "en",
+          "Name": "State, duty cycle and phase currents (0.1 A)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 14,
+      "Description": "R3 = 3 Register ab 0x0033 (6 Byte): Byte 0 = 0x33 (Registerecho), Byte 1 Bit 7 UCP <= 10 V = Auto angesteckt (ungültig in E und F), Byte 2 = Zustand, Byte 3..5 Ict1..Ict3 in A (0..80), 0x64 = Messung nicht verfügbar oder Zustand A.",
+      "Factor": 1,
+      "Ident": "AblCurrentAmps",
+      "Length": 6,
+      "Name": "State and phase currents (1 A)",
+      "Profile": "",
+      "ReadAddress": 51,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Zustand und Phasenströme (1 A)"
+        },
+        {
+          "Language": "en",
+          "Name": "State and phase currents (1 A)"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    },
+    {
+      "Active": true,
+      "ByteOrder": -1,
+      "DataType": 10,
+      "Description": "R8 = 8 Register ab 0x0050 (16 Byte, ASCII): Byte 0..1 = 0x50 0x00 (Registerecho), danach die Seriennummer (Beispiel der Doku: 2W22xy01234567). Nur als Beispiel in Kapitel 1.4.1 der Doku beschrieben.",
+      "Factor": 1,
+      "Ident": "AblSerialNumber",
+      "Length": 16,
+      "Name": "Serial number",
+      "Profile": "",
+      "ReadAddress": 80,
+      "ReadFunctionCode": 3,
+      "Translation": [
+        {
+          "Language": "de",
+          "Name": "Seriennummer"
+        },
+        {
+          "Language": "en",
+          "Name": "Serial number"
+        }
+      ],
+      "WriteAddress": 0,
+      "WriteFunctionCode": 0
+    }
+  ],
+  "ByteOrder": 0,
+  "ByteOrderFloats": true,
+  "Active": true,
+  "ReferenceCountStartsAtZero": true,
+  "UseEnronMode": false,
+  "Name": "ABL eMH1 (Ladesteuerung EVCC2/3, Modbus-ASCII)",
+  "Description": "SONDERFALL: ABL-Ladepunkte mit Ladesteuerung EVCC2/3 sprechen Modbus-ASCII auf RS485 (38400 Bd, 8E1), nicht Modbus-RTU oder -TCP. Normale Modbus-Treiber können sie nicht lesen. GREVIORA-EMS: Modbus-Web, Protokoll »Sonder: ABL-Wallbox«. Einzelheiten im Block »Sonder«.",
+  "Type": "charging_station",
+  "Manufacturer": "ABL",
+  "Product": "eMH1",
+  "Profiles": {
+    "ABL.DutyCycle": {
+      "Associations": [],
+      "Digits": 1,
+      "Icon": "",
+      "MaxValue": 100.0,
+      "MinValue": 8.0,
+      "Prefix": "",
+      "StepSize": 0.1,
+      "Suffix": " %",
+      "Type": 2
+    }
+  },
+  "Requests": {
+    "Interval": 2000
+  },
+  "VirtualAddresses": [],
+  "Sonder": {
+    "Protokoll": "abl-ascii",
+    "Kurz": "Modbus-ASCII über RS485 (38400 Bd, 8E1) - kein Modbus-RTU/TCP",
+    "Hinweis_de": "Anbindung über einen RS485-LAN-Wandler im Transparent-Modus (z. B. USR-DR302): die ASCII-Rahmen gehen roh über TCP. Nur EIN Master am Bus - zwei Treiber gleichzeitig stören sich gegenseitig. Ladepause (0x03E8) nur verwenden, wenn das Auto danach zuverlässig weiterlädt; sonst den Mindeststrom 6 A halten.",
+    "Hinweis_en": "Connect via an RS485-to-LAN converter in transparent mode (e.g. USR-DR302); the ASCII frames are sent raw over TCP. Only ONE master on the bus. Use the pause value (0x03E8) only if the vehicle reliably resumes charging; otherwise keep the minimum current of 6 A.",
+    "Schnittstelle": {
+      "Bus": "RS485",
+      "Baud": 38400,
+      "Datenformat": "8E1",
+      "Modbus": "ASCII",
+      "Funktionscodes": [
+        3,
+        16
+      ],
+      "GeraeteId": "0x01..0x10 (Standard 0x01), 0x00 = Broadcast"
+    },
+    "Rahmen": {
+      "Anfrage": "':' + Hex(Geräte-ID, Funktion, Daten, LRC) + CRLF, z. B. :0103002E0005C9",
+      "Antwort": "'>' + Hex(Geräte-ID, Funktion, Bytezahl, Daten, LRC) + CRLF",
+      "LRC": "Zweierkomplement der Bytesumme",
+      "Leseantwort": "erstes Datenbyte = Nummer des gelesenen Registers",
+      "Schreibantwort": "Geräte-ID, 0x10, Startadresse, Anzahl, LRC (z. B. >011000140001DA)",
+      "Fehler": "keine Antwort (Parität, LRC, ungültiges Register oder ungültige Anzahl) oder >0190046B (Schreiben abgelehnt)",
+      "Lesen": "nur die dokumentierten Blöcke mit ihrer festen Registerzahl abfragen (0x0001/2, 0x0003/1, 0x0006/2, 0x002E/5, 0x0033/3, 0x0050/8)"
+    },
+    "Strom": "Icmax (0x0014) = Tastgrad[%] × 10; I = Tastgrad × 0,6 A: 6 A = 100, 10 A = 166, 16 A = 266; 0x03E8 = kein Strom erlaubt",
+    "Zustaende": {
+      "A1": "wartet auf ein Auto",
+      "B1": "Auto angesteckt, fragt nach Ladung",
+      "B2": "Auto darf laden",
+      "C2": "Auto lädt",
+      "C3": "Auto lädt mit reduziertem Strom (Fehler F16/F17)",
+      "C4": "Auto lädt mit reduziertem Strom (Schieflast F15)",
+      "E0": "Ladepunkt abgeschaltet",
+      "E1": "Produktionstest",
+      "E2": "Einrichtmodus der Ladesteuerung",
+      "E3": "Bus im Ruhezustand",
+      "F1": "Schütz ungewollt geschlossen (Schweißerkennung)",
+      "F2": "interner Fehler",
+      "F3": "DC-Fehlerstrom erkannt",
+      "F4": "Zeitüberschreitung der Upstream-Kommunikation",
+      "F5": "Steckerverriegelung fehlgeschlagen",
+      "F6": "CS außerhalb des Bereichs",
+      "F7": "Auto fordert Zustand D",
+      "F8": "CP außerhalb des Bereichs",
+      "F9": "Überstrom erkannt",
+      "F10": "Temperatur außerhalb der Grenzen",
+      "F11": "Schütz ungewollt geöffnet"
+    },
+    "Doku_Druckfehler": "Drei Beispielrahmen der Doku tragen eine falsche LRC: Antwort auf 0x002E endet auf 1F (richtig AE), Antwort auf 0x0033 auf EC (richtig 6C), Schreibantwort auf 0x0013 auf D8 (richtig DB). Nachrechnen statt abschreiben.",
+    "Modelle": "Gilt für ABL-Ladepunkte mit Ladesteuerung EVCC2/3. Eingetragen als eMH1; Modell am Typschild prüfen (Seriennummer steht in 0x0050).",
+    "Quelle": "ABL: EVCC2/3 - API subset for external applications, Dokument 05 0015 20 Rev. B (12.03.2020)",
+    "Treiber": "GREVIORA-EMS ab 1.5.2.9: Modbus-Web, Protokoll »Sonder: ABL-Wallbox«"
+  }
+}
